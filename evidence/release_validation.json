@@ -1,0 +1,75 @@
+{
+  "schema": "nyqo-release-preparation-v1",
+  "verified_on": "2026-10-28",
+  "checkpoint": {
+    "repository": "Hxtomi/nyqo",
+    "revision": "63af48f21c25223f4258d1bd4b99887769881497",
+    "private_at_verification": true,
+    "parameters": 497119488,
+    "num_hidden_layers": 24,
+    "weight_sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078"
+  },
+  "upload": {
+    "status": "checkpoint-uploaded-and-verified",
+    "source_repository": "Exequted/Nyqo",
+    "source_revision": "1e59bda5f5209ab22952f7fd31d5350dba243008",
+    "destination_repository": "Hxtomi/nyqo",
+    "destination_revision": "63af48f21c25223f4258d1bd4b99887769881497",
+    "private": true,
+    "parameters": 497119488,
+    "file_count": 14,
+    "files": {
+      "chat_template.jinja": {
+        "bytes": 5487,
+        "sha256": "ba551d58630afa3190b1be3602e28301f3d2e9bbac978dfc49d6d825171648b6",
+        "verification": "destination bytes downloaded and hashed"
+      },
+      "config.json": {
+        "bytes": 4983,
+        "sha256": "7c06400cfce9f52c99d524b0e66eb0340817d155c5a742edaad8f936fbf259f6",
+        "verification": "destination bytes downloaded and hashed"
+      },
+      "generation_config.json": {
+        "bytes": 131,
+        "sha256": "c6a2b4dfe4cd4150a9ea68563de16be2907f09ceb3dd81da7aafffe9d1dbcc43",
+        "verification": "destination bytes downloaded and hashed"
+      },
+      "model.safetensors": {
+        "bytes": 1279535128,
+        "sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078",
+        "verification": "source bytes hashed; destination content-addressed LFS metadata matched"
+      },
+      "tokenizer.json": {
+        "bytes": 4733389,
+        "sha256": "df1d8d5ec5d091b460562ffd545e4a5e91d17d4a0db7ebe733be34ed374377bd",
+        "verification": "destination bytes downloaded and hashed"
+      },
+      "tokenizer_config.json": {
+        "bytes": 586,
+        "sha256": "098dbd6e0898526e88f6c133bd75ce8b875730e48fd1739d9888700467779ab1",
+        "verification": "destination bytes downloaded and hashed"
+      }
+    },
+    "gpu_generation_check": "pending"
+  },
+  "local_cpu_check": {
+    "status": "cpu-load-and-generation-passed",
+    "checkpoint_revision": "63af48f21c25223f4258d1bd4b99887769881497",
+    "python": "3.13.0",
+    "torch": "2.9.0+cpu",
+    "transformers": "5.8.1",
+    "device": "cpu",
+    "dtype": "float32",
+    "attention": "sdpa",
+    "threads": 2,
+    "parameters": 497119488,
+    "layers": 24,
+    "prompt": "Say hello in one short sentence.",
+    "max_new_tokens": 64,
+    "generated_tokens": 3,
+    "response": "Hello!",
+    "elapsed_seconds": 9.16,
+    "scope": "Local loading and one short greedy generation using the six hash-verified files uploaded to Hxtomi/nyqo. This is not the evaluated BF16 CUDA profile or a quality rerun.",
+    "fresh_gpu_check": "pending"
+  }
+}

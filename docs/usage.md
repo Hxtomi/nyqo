@@ -4,7 +4,7 @@ Download **Nyqo n1**, verify its weights, and run text generation with the comma
 
 ## Environment
 
-The recorded environment used a cloud RTX 3060 12 GB, Python 3.12.13, PyTorch 2.11.0+cu128, Transformers 5.8.1, and safetensors 0.7.0. The supplied generation command requires a CUDA GPU with BF16 support. No CPU speed, quantized deployment, or fresh-machine inference result is claimed.
+The recorded environment used a cloud RTX 3060 12 GB, Python 3.12.13, PyTorch 2.11.0+cu128, Transformers 5.8.1, and safetensors 0.7.0. The supplied generation command requires a CUDA GPU with BF16 support. A separate local CPU loading and short generation check passed with Python 3.13.0, PyTorch 2.9.0+cpu, and Transformers 5.8.1 in FP32/SDPA. That check is not a CPU speed benchmark or validation of the CUDA profile.
 
 From the repository root:
 
@@ -16,13 +16,13 @@ python -m pip install -r requirements.txt
 
 Use your platform's matching PyTorch CUDA wheel if needed. The requirements file pins direct inference dependencies; it is not a complete transitive training lock.
 
-## Planned Hugging Face release
+## Hugging Face checkpoint
 
-The release target is [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo), which currently remains private. A Transformers loading example is prepared in the [model card](../release/huggingface/README.md#quick-start); weight upload and end-to-end validation are pending. The archive instructions below describe the current download path and will be updated after the public release checkpoint is verified.
+The six inference files are uploaded to [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo), which remains private during release preparation. Their byte lengths and hashes match the selected checkpoint. A Transformers loading example is in the [model card](../release/huggingface/README.md#quick-start); validation in a fresh GPU environment is still pending. The [release check record](../evidence/release_validation.json) describes the completed upload and local CPU check.
 
-## Obtain the archived checkpoint
+## Download the checkpoint
 
-The private recovery archive is pinned to a commit, not its moving main branch. You need Hugging Face credentials authorized to read `Exequted/Nyqo`. Standard Hugging Face authentication, including `HF_TOKEN`, is supported by the download library.
+The download is pinned to commit `63af48f21c25223f4258d1bd4b99887769881497` of `Hxtomi/nyqo`, rather than its moving main branch. While the repository is private, use Hugging Face credentials with read access to it. Standard Hugging Face authentication, including `HF_TOKEN`, is supported by the download library.
 
 ~~~bash
 python -m nyqo.download --output models/nyqo-n1
@@ -30,9 +30,9 @@ python -m nyqo.download --output models/nyqo-n1
 
 The command downloads only the six files listed in [artifacts/nyqo-n1.json](../artifacts/nyqo-n1.json), verifies byte lengths and SHA256, and does not fetch optimizer states or training data. An existing local file is reused only when its integrity check passes. A conflicting local file causes an error.
 
-If you already have the archived checkpoint, copy its six manifest-listed files into a directory and use that directory directly. This is a full expanded checkpoint, not a LoRA adapter. The weight file is 1,279,535,128 bytes.
+If you already have the checkpoint, copy its six manifest-listed files into a directory and use that directory directly. This is a full expanded checkpoint, not a LoRA adapter. The weight file is 1,279,535,128 bytes.
 
-Access failure does not mean the archive is missing. The archive was private at this repository's preparation date, 26 October 2026; the public release remains pending.
+The original recovery archive remains recorded in [Artifacts](../artifacts/README.md). It is not needed for this download path.
 
 ## Generate an answer
 
@@ -73,7 +73,7 @@ python scripts/verify_repository.py
 
 They cover integrity failure handling, pinned download behavior, path validation, context budgets, the answer parser, source hashes, result arithmetic, and local document links. Model libraries are loaded only when a model command actually runs.
 
-The original CPU and CUDA restoration receipts establish that saved weights and training state were recoverable. They did not perform forward/generation/backward/optimizer steps. The new portable CLI has not been run end to end with Nyqo n1 on a fresh GPU machine. Passing the offline suite must not be read as a model-quality rerun.
+The original CPU and CUDA restoration receipts establish that saved weights and training state were recoverable. They did not perform forward/generation/backward/optimizer steps. The release preparation additionally verified the six inference files, the 24-layer layout, and 497,119,488 parameters, and ran one local CPU generation through Transformers. The CUDA CLI has not been run end to end on a fresh GPU machine. These checks are not a model-quality rerun.
 
 ## Training source
 

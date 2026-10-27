@@ -15,13 +15,14 @@ def load_manifest(path=DEFAULT_MANIFEST):
     if data.get("schema") != "nyqo-checkpoint-v1":
         raise ValueError("Unsupported checkpoint manifest")
     if not re.fullmatch(r"[0-9a-f]{40}", data.get("revision", "")):
-        raise ValueError("The archive revision must be an immutable commit SHA")
+        raise ValueError("The checkpoint revision must be an immutable commit SHA")
     if not isinstance(data.get("repo_id"), str) or "/" not in data["repo_id"]:
-        raise ValueError("Missing archive repository")
+        raise ValueError("Missing checkpoint repository")
     folder = data.get("subfolder", "")
-    if (not isinstance(folder, str) or not folder or "\\" in folder
-            or folder.startswith("/") or any(p in ("", ".", "..") for p in folder.split("/"))):
-        raise ValueError("Invalid archive subfolder")
+    if (not isinstance(folder, str) or "\\" in folder
+            or folder.startswith("/")
+            or (folder and any(p in ("", ".", "..") for p in folder.split("/")))):
+        raise ValueError("Invalid checkpoint subfolder")
     records = data.get("files")
     if not isinstance(records, list) or not records:
         raise ValueError("Empty checkpoint manifest")

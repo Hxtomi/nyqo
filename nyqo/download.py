@@ -19,8 +19,8 @@ def _hub_fetch(**kwargs):
         return hf_hub_download(**kwargs)
     except HfHubHTTPError:
         raise RuntimeError(
-            "Archive download failed. The pinned Exequted/Nyqo archive is private; "
-            "use Hugging Face credentials with read access and check connectivity."
+            "Checkpoint download failed. Check Hugging Face connectivity and "
+            "repository access; private repositories require credentials with read access."
         ) from None
 
 
@@ -45,7 +45,8 @@ def download_checkpoint(destination, manifest=None, fetch_file=None, cache_dir=N
             repo_id=manifest["repo_id"],
             repo_type=manifest.get("repo_type", "model"),
             revision=manifest["revision"],
-            filename=manifest["subfolder"] + "/" + record["name"],
+            filename="/".join(part for part in
+                              (manifest.get("subfolder", ""), record["name"]) if part),
             cache_dir=str(cache_dir),
         ))
         descriptor, temporary_name = tempfile.mkstemp(prefix=".nyqo-", dir=destination)

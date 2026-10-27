@@ -70,6 +70,28 @@ class IntegrityTests(unittest.TestCase):
 
 
 class DownloadTests(unittest.TestCase):
+    def test_root_checkpoint_manifest_downloads_without_a_leading_slash(self):
+        payload = b"{}"
+        data = manifest([record("config.json", payload)])
+        data["subfolder"] = ""
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source = root / "remote.json"
+            source.write_bytes(payload)
+            metadata = root / "manifest.json"
+            metadata.write_text(json.dumps(data))
+            checked = load_manifest(metadata)
+            calls = []
+
+            def fetch(**kwargs):
+                calls.append(kwargs)
+                return source
+
+            destination = root / "checkpoint"
+            download_checkpoint(destination, checked, fetch_file=fetch)
+            self.assertEqual([call["filename"] for call in calls], ["config.json"])
+            self.assertEqual((destination / "config.json").read_bytes(), payload)
+
     def test_download_pins_commit_and_verifies_every_member(self):
         payloads = {"config.json": b"{}", "model.safetensors": b"weights"}
         data = manifest([record(name, blob) for name, blob in payloads.items()])

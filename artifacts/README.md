@@ -1,6 +1,6 @@
 # Artifact inventory
 
-Updated 27 October 2026. “Preserved” describes archived evidence; it does not imply anonymous public access.
+Updated 28 October 2026. “Preserved” describes archived evidence; it does not imply anonymous public access.
 
 This inventory describes the **Nyqo n1** (`nyqo-n1`) checkpoint and its supporting materials. Historical archive paths, hashes, and receipt identifiers are preserved.
 
@@ -8,7 +8,7 @@ This inventory describes the **Nyqo n1** (`nyqo-n1`) checkpoint and its supporti
 |:--|:--|:--|
 | Expansion, training, original generation source | [research/original/](../research/original/) | Included |
 | Safe results and source bindings | [evidence/](../evidence/) | Included |
-| Nyqo n1 weight, config, tokenizer, template | [nyqo-n1.json](nyqo-n1.json) | Private HF archive; pinned download supported |
+| Nyqo n1 weight, config, tokenizer, template | [nyqo-n1.json](nyqo-n1.json) | Uploaded to Hxtomi/nyqo; pinned download supported; private during release preparation |
 | Corrected TRAIN1600_v2 and fixed order | Same model recovery payload | Privately preserved |
 | K500 reference and B0 dependency | Recovery payload / original upstream | Preserved; not copied into this Git repository |
 | Nyqo n1 optimizer, scheduler, RNG, exposure | Recovery payload, `training_state.pt` | Privately preserved |

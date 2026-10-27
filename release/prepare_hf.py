@@ -73,7 +73,8 @@ def main():
             source = Path(hf_hub_download(
                 SOURCE["repo_id"], entry["name"], subfolder=SOURCE["subfolder"],
                 revision=SOURCE["revision"], cache_dir=cache / "hub",
-                token=os.environ.get("NYQO_ARCHIVE_TOKEN") or None,
+                token=(os.environ.get("NYQO_SOURCE_TOKEN")
+                       or os.environ.get("NYQO_ARCHIVE_TOKEN") or None),
             ))
         verify_file(source, entry)
         shutil.copyfile(source, destination)

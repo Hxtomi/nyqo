@@ -15,7 +15,7 @@ The goal was to improve the base model's overall task performance while keeping 
 | Architecture | LFM2 hybrid, 24 layers |
 | Base model | [LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M) |
 | Checkpoint format | Safetensors with Transformers configuration and tokenizer |
-| Weights | Public Hugging Face release planned |
+| Weights | [Hugging Face checkpoint](https://huggingface.co/Hxtomi/nyqo) |
 | Source license | [Apache 2.0](LICENSE) |
 | Model card | [Nyqo n1 model card](MODEL_CARD.md) |
 
@@ -39,7 +39,7 @@ On the internal evaluation set, n1 scores **56/204**, versus **45/204** for the 
 
 ## Getting started
 
-The [Hugging Face model page](https://huggingface.co/Hxtomi/nyqo) is prepared in a private repository. Checkpoint upload and a fresh-GPU loading check are pending. Until then, the checkpoint is stored in a private archive.
+The checkpoint files are available in the [Hugging Face repository](https://huggingface.co/Hxtomi/nyqo), which remains private during release preparation. File integrity and local CPU loading and generation have been checked; the CUDA example still awaits validation in a fresh GPU environment.
 
 The current CLI runs a local checkpoint and requires **Python 3.12** and a **CUDA GPU with BF16 support**:
 
@@ -49,7 +49,7 @@ cd nyqo
 python -m pip install -r requirements.txt
 ```
 
-The checkpoint files must be placed in `models/nyqo-n1`. If you have access to the private archive, download and verify them with:
+Download the six checkpoint files from the pinned Hub revision and verify them in `models/nyqo-n1`:
 
 ```bash
 python -m nyqo.download --output models/nyqo-n1
@@ -62,7 +62,7 @@ python -m nyqo.generate --checkpoint models/nyqo-n1 \
   --prompt "Explain gradient descent in simple terms."
 ```
 
-The CLI verifies file hashes, applies the model's native chat template, and uses the recorded BF16/SDPA profile. Its offline tests pass, but an end-to-end run in a fresh GPU environment has not been validated yet.
+The CLI verifies file hashes, applies the model's native chat template, and uses the recorded BF16/SDPA profile. Offline checks and a separate local Transformers CPU generation check pass. The CUDA CLI has not yet been validated in a fresh GPU environment.
 
 See the [usage guide](docs/usage.md) for authentication, multi-turn conversations, and generation settings.
 

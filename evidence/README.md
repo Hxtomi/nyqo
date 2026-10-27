@@ -4,6 +4,7 @@ These records support **Nyqo n1** (`nyqo-n1`). Historical labels inside the arch
 
 | File | Meaning |
 |:--|:--|
+| [release_validation.json](release_validation.json) | Checkpoint upload, file verification, and a local CPU generation check; fresh GPU validation pending |
 | [comparison_summary.json](comparison_summary.json) | Current comparison counts and the author's internal evaluation scoring decisions of 27 October 2026 |
 | [closeout.json](closeout.json) | Aggregate N2 acceptance, external transfer, overlap audit, and preservation |
 | [final_receipt.json](final_receipt.json) | Safe aggregate closed-final result |

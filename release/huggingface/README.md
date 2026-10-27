@@ -57,7 +57,7 @@ Full protocols, confidence intervals, historical results, and artifact availabil
 
 ## Quick start
 
-**Checkpoint upload and a fresh-GPU loading check are pending.** Once the model files are available, use a CUDA GPU with BF16 support. The recorded environment used Python 3.12, PyTorch 2.11.0, and Transformers 5.8.1; pinned dependencies are provided in the [GitHub repository](https://github.com/Hxtomi/nyqo/blob/main/requirements.txt).
+**The checkpoint files are included in this repository.** File integrity and local CPU loading and a short greedy generation have been checked. The CUDA example below has not yet been validated in a fresh GPU environment. It requires a CUDA GPU with BF16 support. The recorded environment used Python 3.12, PyTorch 2.11.0, and Transformers 5.8.1; pinned dependencies are provided in the [GitHub repository](https://github.com/Hxtomi/nyqo/blob/main/requirements.txt). [Release checks](https://github.com/Hxtomi/nyqo/blob/main/evidence/release_validation.json).
 
 ```python
 import torch

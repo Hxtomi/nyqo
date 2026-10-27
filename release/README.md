@@ -14,9 +14,9 @@ Use an existing checkpoint directory containing the six files:
 python release/prepare_hf.py --source-dir /path/to/checkpoint
 ```
 
-Without `--source-dir`, the helper downloads only those files from the pinned private recovery archive. The archive account needs read access; the destination account needs write access to Hxtomi/nyqo. Standard Hugging Face authentication is used for the destination. A separate archive credential can be supplied through the `NYQO_ARCHIVE_TOKEN` environment variable.
+Without `--source-dir`, the helper downloads only those files from the pinned Hxtomi/nyqo checkpoint revision in [artifacts/nyqo-n1.json](../artifacts/nyqo-n1.json). Standard Hugging Face authentication is used for source and destination access. An optional separate source credential can be supplied through `NYQO_SOURCE_TOKEN`; the legacy `NYQO_ARCHIVE_TOKEN` name is also accepted.
 
-Run this from a workspace on the approved work drive. Downloads and the archive cache are placed beside the release bundle.
+Run this from a workspace on the approved work drive. Downloads and the Hub cache are placed beside the release bundle.
 
 ## Verify and upload privately
 
@@ -29,8 +29,10 @@ The helper verifies every file's length and SHA256 and checks the expanded model
 
 ## Validate the loading example
 
-Run the Python example in the model card with access to Hxtomi/nyqo on a CUDA GPU with BF16 support. Record the Hub revision and observed output. The card currently labels this end-to-end check as pending.
+All six inference files have been uploaded and verified. A local Transformers check loaded the checkpoint on CPU in FP32/SDPA and completed one short greedy generation. The selected weights, 24-layer layout, and 497,119,488 parameters match the release manifest. Details are in [the release check record](../evidence/release_validation.json).
 
-The current model card is available in private Hugging Face commit `21833d3d018342fbda169f9200db38036b992e7c` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. The card contents and Hub metadata have been verified. The six checkpoint files and final release manifest have not yet been uploaded.
+The CUDA example in the model card still needs validation in a fresh GPU environment with BF16 support. Record the Hub revision and observed output when running that check; the card keeps this status explicit.
 
-The release account could not access the pinned recovery archive. To complete the upload, use a local directory containing the six manifest-listed checkpoint files, or an archive credential with read access. A fresh-GPU download and generation check remains pending.
+The current model card is available in private Hugging Face commit `960012a31e6bb45f1f3303db60448234c7f4af3a` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. All six checkpoint files and the release manifest are uploaded. The card contents, file hashes, and Hub metadata have been verified.
+
+The repository remains private during release preparation. Training data, optimizer states, and closed evaluation items remain outside the model release.
