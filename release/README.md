@@ -31,6 +31,6 @@ The helper verifies every file's length and SHA256 and checks the expanded model
 
 Run the Python example in the model card with access to Hxtomi/nyqo on a CUDA GPU with BF16 support. Record the Hub revision and observed output. The card currently labels this end-to-end check as pending.
 
-The current model card is available in private Hugging Face commit `5b410d7965dbce7a70fd5d20627a7f85abbfb9e7` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. The card contents and Hub metadata have been verified. The six checkpoint files and final release manifest have not yet been uploaded.
+The current model card is available in private Hugging Face commit `21833d3d018342fbda169f9200db38036b992e7c` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. The card contents and Hub metadata have been verified. The six checkpoint files and final release manifest have not yet been uploaded.
 
 The release account could not access the pinned recovery archive. To complete the upload, use a local directory containing the six manifest-listed checkpoint files, or an archive credential with read access. A fresh-GPU download and generation check remains pending.

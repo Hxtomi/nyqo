@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1368" height="438" viewBox="0 0 1368 438" role="img" aria-labelledby="title description">
-<title id="title">Nyqo n1 benchmark comparison</title>
-<desc id="description">Scores are percentages; higher is better. Nyqo n1 is shaded. Bold underlined scores mark the best result among five compact models. Qwen 4B is shown separately as a larger-model reference. Internal eval is our own 204-task evaluation set; ARC-Easy, IFEval, and MBPP+ use subsets of 594, 210, and 100 tasks.</desc>
+<title id="title">Nyqo N1 benchmark comparison</title>
+<desc id="description">Scores are percentages; higher is better. Nyqo N1 is shaded. Bold underlined scores mark the best result among five compact models. Qwen 4B is shown separately as a larger-model reference. Internal eval is our own 204-task evaluation set; ARC-Easy, IFEval, and MBPP+ use subsets of 594, 210, and 100 tasks.</desc>
 <rect x="0" y="0" width="1368" height="438" rx="20" fill="#ffffff" />
 <g transform="translate(24 24)">
 <text x="16.00" y="17.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#737373">COMPACT MODELS</text>
@@ -12,7 +12,7 @@
 <text x="28.00" y="70.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Evaluation</text>
 <text x="341.00" y="57.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">LFM2.5-350M</text>
 <text x="341.00" y="78.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#c4c4c4">Base model</text>
-<text x="507.00" y="57.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Nyqo n1</text>
+<text x="507.00" y="57.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Nyqo N1</text>
 <text x="507.00" y="78.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#c4c4c4">Ours</text>
 <text x="673.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">SmolLM2</text>
 <text x="839.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Qwen2.5-0.5B</text>
