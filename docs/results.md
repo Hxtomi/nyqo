@@ -1,16 +1,16 @@
 # Nyqo n1 — evaluation record
 
-Results for **Nyqo n1** (`nyqo-n1`) refer to the weight hash in [the checkpoint manifest](../artifacts/nyqo-n1.json). Archived N2 and N2-FINAL204 labels refer to the internal development phase and its final evaluation bank, not a public Nyqo n2 model.
+Results for **Nyqo n1** (`nyqo-n1`) refer to the weight hash in [the checkpoint manifest](../artifacts/nyqo-n1.json). Archived N2 labels refer to the internal development phase, not a public Nyqo n2 model. The 204-task set labelled **Internal eval** here is recorded as `FINAL` or `N2-FINAL204` in archived artifacts.
 
 A score on a custom subset is not a full-benchmark leaderboard score. Sources for the n1/base evaluation are the [closeout receipt](../evidence/closeout.json), [final receipt](../evidence/final_receipt.json), and [selection receipt](../evidence/finalist_selection.json).
 
-The finalized comparison appears in the [README](../README.md#results) and [release model card](../release/huggingface/README.md#evaluation). Nyqo n1 scores **56/204** on FINAL. The project author confirmed this final total on 27 October 2026. Paired intervals have not been recomputed following the final scoring decision.
+The finalized comparison appears in the [README](../README.md#results) and [release model card](../release/huggingface/README.md#evaluation). Nyqo n1 scores **56/204** on the internal evaluation set. The project author confirmed this final total on 27 October 2026. Paired intervals have not been recomputed following the final scoring decision.
 
 ## Current model comparison
 
 The table below records counts of tasks passed from the reported comparison. The SmolLM2, Qwen2.5-0.5B, Granite-350M, and Qwen 4B rows are descriptive references reported by the author. Exact checkpoint IDs, revisions, and per-model inference records for these additional models are not included in the published evidence, so their scores cannot be independently reproduced from this release.
 
-| Model | FINAL / 204 | ARC-Easy / 594 | IFEval / 210 | MBPP+ / 100 |
+| Model | Internal eval / 204 | ARC-Easy / 594 | IFEval / 210 | MBPP+ / 100 |
 |:--|--:|--:|--:|--:|
 | LFM2.5-350M (base) | 45 | 336 | 159 | 3 |
 | Nyqo n1 | 56 | 370 | 153 | 13 |
@@ -19,7 +19,7 @@ The table below records counts of tasks passed from the reported comparison. The
 | Granite-350M | 45 | 353 | 105 | 31 |
 | Qwen 4B (reference) | 138 | 450 | 181 | 63 |
 
-On 27 October 2026, the project author, Artur Markov-Tsoy, finalized four FINAL scores: Nyqo n1 **56/204 (27.45%)**, Qwen2.5-0.5B **46/204 (22.55%)**, Granite-350M **45/204 (22.06%)**, and Qwen 4B **138/204 (67.65%)**. These replace the earlier reported bounds in the current comparison. They are the author's scoring decisions, not new model runs or independently recomputed item grades. The other reported scores are unchanged.
+On 27 October 2026, the project author, Artur Markov-Tsoy, finalized four internal evaluation scores: Nyqo n1 **56/204 (27.45%)**, Qwen2.5-0.5B **46/204 (22.55%)**, Granite-350M **45/204 (22.06%)**, and Qwen 4B **138/204 (67.65%)**. These replace the earlier reported bounds in the current comparison. They are the author's scoring decisions, not new model runs or independently recomputed item grades. The other reported scores are unchanged.
 
 The [comparison record](../evidence/comparison_summary.json) stores the finalized counts and scoring decisions. The earlier paired analyses remain historical records.
 
@@ -51,9 +51,9 @@ The follow-up uses 10,000 bootstrap replicates. The 97.5% individual primary int
 
 These follow-up subsets and protocols were frozen before their own responses, after limitations of earlier diagnostics were observed. They were not a plan fixed before every earlier experiment.
 
-## Internal final bank
+## Internal evaluation
 
-N2-FINAL204 has 34 tasks in each of six domains. FULL is a binary complete-task-and-rubric success metric. Semantic grading uses a blinded GPT-6.1 Sol judge per domain at medium reasoning effort, with objective checks where applicable. The separate evaluator role is not an independent human replication.
+The internal evaluation set has 204 tasks, with 34 in each of six domains. FULL is a binary complete-task-and-rubric success metric. Semantic grading uses a blinded GPT-6.1 Sol judge per domain at medium reasoning effort, with objective checks where applicable. The separate evaluator role is not an independent human replication.
 
 | Domain, 34 tasks each | B0 | Nyqo n1 | Required n1 minimum |
 |:--|--:|--:|--:|

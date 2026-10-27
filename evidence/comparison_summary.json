@@ -72,7 +72,7 @@
         "model": "Nyqo n1",
         "selected_percentage": "27.45",
         "selected_passed": 56,
-        "decision": "The project author confirmed the finalized FINAL total on 27 October 2026."
+        "decision": "The project author confirmed the finalized internal evaluation total on 27 October 2026."
       },
       {
         "model": "Qwen2.5-0.5B",
@@ -105,7 +105,7 @@
     "count_derivation": "Each selected two-decimal percentage uniquely identifies the recorded integer count out of 204 tasks.",
     "new_model_inference": false,
     "independently_recomputed_item_grades": false,
-    "note": "The four current FINAL totals follow the author's final scoring decisions. Individual prompts, responses, and grades are not included."
+    "note": "The four current internal evaluation totals follow the author's final scoring decisions. Individual prompts, responses, and grades are not included."
   },
   "additional_model_status": "Author-reported descriptive references; exact checkpoint IDs, revisions, and per-model inference records are not included in the release evidence."
 }

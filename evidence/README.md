@@ -4,7 +4,7 @@ These records support **Nyqo n1** (`nyqo-n1`). Historical labels inside the arch
 
 | File | Meaning |
 |:--|:--|
-| [comparison_summary.json](comparison_summary.json) | Current comparison counts and the author's FINAL scoring decisions of 27 October 2026 |
+| [comparison_summary.json](comparison_summary.json) | Current comparison counts and the author's internal evaluation scoring decisions of 27 October 2026 |
 | [closeout.json](closeout.json) | Aggregate N2 acceptance, external transfer, overlap audit, and preservation |
 | [final_receipt.json](final_receipt.json) | Safe aggregate closed-final result |
 | [finalist_selection.json](finalist_selection.json) | Selected model identity and DEV decision fixed before external/final evaluation |

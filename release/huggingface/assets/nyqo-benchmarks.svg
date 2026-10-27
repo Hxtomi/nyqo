@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1368" height="438" viewBox="0 0 1368 438" role="img" aria-labelledby="title description">
 <title id="title">Nyqo n1 benchmark comparison</title>
-<desc id="description">Scores are percentages; higher is better. Nyqo n1 is shaded. Bold underlined scores mark the best result among five compact models. Qwen 4B is shown separately as a larger-model reference. FINAL is an internal 204-task evaluation; ARC-Easy, IFEval, and MBPP+ use subsets of 594, 210, and 100 tasks.</desc>
+<desc id="description">Scores are percentages; higher is better. Nyqo n1 is shaded. Bold underlined scores mark the best result among five compact models. Qwen 4B is shown separately as a larger-model reference. Internal eval is our own 204-task evaluation set; ARC-Easy, IFEval, and MBPP+ use subsets of 594, 210, and 100 tasks.</desc>
 <rect x="0" y="0" width="1368" height="438" rx="20" fill="#ffffff" />
 <g transform="translate(24 24)">
 <text x="16.00" y="17.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#737373">COMPACT MODELS</text>
@@ -18,7 +18,7 @@
 <text x="839.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Qwen2.5-0.5B</text>
 <text x="1005.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Granite-350M</text>
 <text x="1212.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#ffffff">Qwen 4B</text>
-<text x="28.00" y="121.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202020">FINAL (internal)</text>
+<text x="28.00" y="121.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202020">Internal eval</text>
 <text x="28.00" y="143.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="400" fill="#737373">204 tasks ↑</text>
 <text x="341.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="LFM2.5-350M (base)" data-metric="final">22.06</text>
 <text x="507.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#202020" data-model="Nyqo n1" data-metric="final" data-best="true">27.45</text>

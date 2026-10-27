@@ -35,8 +35,8 @@
     },
     {
       "name": "README.md",
-      "bytes": 7387,
-      "sha256": "cd09307454cd403191d3ff39567859a907a45705a34b0d07876ac2c54d1fe3e0"
+      "bytes": 7407,
+      "sha256": "e4b5e0221e0b19f2cb096204dbca4321d5791d6571312e8d7728a742eb32f906"
     },
     {
       "name": "LICENSE",
@@ -50,8 +50,8 @@
     },
     {
       "name": "assets/nyqo-benchmarks.svg",
-      "bytes": 10148,
-      "sha256": "dba7d62e3d0a25d3da2dfa6c5457f5a5635ebda5d85e94ed7ad07c250f3ff4ef"
+      "bytes": 10153,
+      "sha256": "267994eaab53d9a5efe1342c37a40eaf59d4a21506fc4be9302570326a7bee54"
     },
     {
       "name": "assets/badges/github.svg",

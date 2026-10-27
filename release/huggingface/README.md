@@ -41,7 +41,7 @@ Post-training combines supervised fine-tuning on verified answers with distillat
 
 [Scores as a text table](https://github.com/Hxtomi/nyqo/blob/main/docs/results.md#current-model-comparison)
 
-With a limited compute budget, we evaluated fixed subsets of **ARC-Easy (594 tasks)**, **IFEval (210 tasks)**, and **MBPP+ (100 tasks)**. These are subset scores, not full-benchmark leaderboard results. **FINAL** is our separate internal evaluation of **204 tasks**.
+With a limited compute budget, we evaluated fixed subsets of **ARC-Easy (594 tasks)**, **IFEval (210 tasks)**, and **MBPP+ (100 tasks)**. These are subset scores, not full-benchmark leaderboard results. **Internal eval** is our own evaluation set of **204 tasks**.
 
 The additional comparison scores are reported by the author as descriptive references; exact checkpoint IDs, revisions, and per-model inference records are not included in the release evidence.
 
@@ -51,7 +51,7 @@ n1 improves on the ARC-Easy and MBPP+ subsets, while its IFEval score is lower. 
 
 MBPP+ format compliance rose from 45 to 97 of 100 responses, which may contribute to the gain; that contribution has not been isolated.
 
-On FINAL, n1 scores **56/204**, versus **45/204** for the base model (**+24.44% relative; +5.39 percentage points**). This meets the project's acceptance criteria. The earlier internal bootstrap interval included zero; the updated aggregate summary has no recomputed paired interval. Raw internal item records were not recovered in the checked backups, so the current total cannot be independently regraded from them.
+On the internal evaluation set, n1 scores **56/204**, versus **45/204** for the base model (**+24.44% relative; +5.39 percentage points**). This meets the project's acceptance criteria. The earlier internal bootstrap interval included zero; the updated aggregate summary has no recomputed paired interval. Raw internal item records were not recovered in the checked backups, so the current total cannot be independently regraded from them.
 
 Full protocols, confidence intervals, historical results, and artifact availability are in the [evaluation record](https://github.com/Hxtomi/nyqo/blob/main/docs/results.md).
 

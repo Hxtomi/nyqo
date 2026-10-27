@@ -14,7 +14,7 @@ This inventory describes the **Nyqo n1** (`nyqo-n1`) checkpoint and its supporti
 | Nyqo n1 optimizer, scheduler, RNG, exposure | Recovery payload, `training_state.pt` | Privately preserved |
 | Exact ARC/IFEval transfer slices and responses | `supplements/transfer_final_v1` | Privately preserved |
 | MBPP+ subset (100 tasks), checker/extractor, input150 audit | Independent closeout supplement | Privately preserved |
-| Closed N2-FINAL204 questions and individual responses/grades | Original evaluator workspace, outside this release | Not found in checked shared backups; current raw availability unverified |
+| Closed internal evaluation questions and individual responses/grades | Original evaluator workspace, outside this release | Not found in checked shared backups; current raw availability unverified |
 
 ## Immutable locations
 

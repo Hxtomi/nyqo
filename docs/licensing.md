@@ -28,4 +28,4 @@ Each project's data and code retain their own applicable terms. Dataset contents
 
 The training corpus is private and is not part of this release. Publishing the source code and model weights does not release or license the training archive for redistribution.
 
-Closed N2-FINAL204 prompts, reference material, model responses, and individual grades are excluded. Publishing aggregate counts does not publish that bank.
+Prompts, reference material, model responses, and individual grades from the internal evaluation set are excluded. Publishing aggregate counts does not publish that bank.

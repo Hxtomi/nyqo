@@ -25,7 +25,7 @@ The goal was to improve the base model's overall task performance while keeping 
 
 [Scores as a text table](docs/results.md#current-model-comparison)
 
-With a limited compute budget, we evaluated fixed subsets of **ARC-Easy (594 tasks)**, **IFEval (210 tasks)**, and **MBPP+ (100 tasks)**. These are subset scores, not full-benchmark leaderboard results. **FINAL** is our separate internal evaluation of **204 tasks**.
+With a limited compute budget, we evaluated fixed subsets of **ARC-Easy (594 tasks)**, **IFEval (210 tasks)**, and **MBPP+ (100 tasks)**. These are subset scores, not full-benchmark leaderboard results. **Internal eval** is our own evaluation set of **204 tasks**.
 
 The additional comparison scores are reported by the author as descriptive references; exact checkpoint IDs, revisions, and per-model inference records are not included in the release evidence.
 
@@ -33,7 +33,7 @@ For n1 and the base model, ARC-Easy is scored by normalized answer-choice likeli
 
 For **n1 versus LFM2.5-350M**, the paired 95% confidence intervals for the ARC-Easy and MBPP+ gains lie entirely above zero. IFEval accuracy is lower, but the interval for that difference includes zero. These intervals apply to that base-model comparison; paired intervals for the additional models are not reported here. The n1 results cover a single post-training seed.
 
-On FINAL, n1 scores **56/204**, versus **45/204** for the base model (**+24.44% relative; +5.39 percentage points**). This meets the project's acceptance criteria. The earlier internal bootstrap interval included zero, and no paired interval has been recomputed for the updated aggregate. Passing the project target should not be read as a statistically conclusive gain. Retention was also incomplete in the earlier item-level analysis: n1 retained 26 of the 45 tasks the base model solved.
+On the internal evaluation set, n1 scores **56/204**, versus **45/204** for the base model (**+24.44% relative; +5.39 percentage points**). This meets the project's acceptance criteria. The earlier internal bootstrap interval included zero, and no paired interval has been recomputed for the updated aggregate. Passing the project target should not be read as a statistically conclusive gain. Retention was also incomplete in the earlier item-level analysis: n1 retained 26 of the 45 tasks the base model solved.
 
 [Evaluation protocols and detailed results](docs/results.md) · [Limitations](release/huggingface/README.md#limitations)
 
