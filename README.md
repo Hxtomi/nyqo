@@ -9,6 +9,8 @@
 
 The goal was to improve the base model's overall task performance while keeping regressions in its existing capabilities within preset limits. This repository contains the training code, inference tools, and evaluation results.
 
+Post-trained on **one NVIDIA RTX 3060 (12 GB)**, with **US$19.23 in reported cloud instance rental costs**.
+
 | Model | Nyqo n1 |
 |:--|:--|
 | Parameters | 497,119,488 |
@@ -72,7 +74,7 @@ Nyqo n1 expands LFM2.5-350M from 16 to 24 layers. The eight new layers are initi
 
 Verified answers retained unchanged from the base model or the earlier K500 checkpoint receive both supervised and distillation losses. Corrected or external reference answers receive supervised loss only. For checkpoint selection, six domains are tracked separately: source use, instruction following, reasoning, knowledge, dialogue context, and code.
 
-The selected checkpoint saw 800 training examples. The recorded n1 post-training runs used a single RTX 3060 with 12 GB of VRAM.
+The selected checkpoint saw 800 training examples.
 
 [Method and data](docs/method.md) · [Training code](research/original/)
 

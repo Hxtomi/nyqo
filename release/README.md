@@ -33,6 +33,6 @@ All six inference files have been uploaded and verified. A local Transformers ch
 
 The CUDA example in the model card still needs validation in a fresh GPU environment with BF16 support. Record the Hub revision and observed output when running that check; the card keeps this status explicit.
 
-The current model card is recorded in Hugging Face commit `960012a31e6bb45f1f3303db60448234c7f4af3a` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. All six checkpoint files and the release manifest are uploaded. The card contents, file hashes, and Hub metadata have been verified.
+The current model card is recorded in Hugging Face commit `ec9191f9ad266d0024f3f3f5379a6451ac418493` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. All six checkpoint files and the release manifest are uploaded. The card contents, file hashes, and Hub metadata have been verified.
 
 Training data, optimizer states, and closed evaluation items remain outside the model release.

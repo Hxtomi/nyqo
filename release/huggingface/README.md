@@ -25,6 +25,8 @@ tags:
 
 Post-training combines supervised fine-tuning on verified answers with distillation from the base model and an earlier Nyqo checkpoint. Corrected and external reference answers receive supervised loss only. The selected checkpoint saw 800 examples from a fixed set of 1,600; the training corpus is private.
 
+Post-trained on **one NVIDIA RTX 3060 (12 GB)**, with **US$19.23 in reported cloud instance rental costs**.
+
 [Training method](https://github.com/Hxtomi/nyqo/blob/main/docs/method.md) · [Evaluation record](https://github.com/Hxtomi/nyqo/blob/main/docs/results.md)
 
 | Property | Value |
