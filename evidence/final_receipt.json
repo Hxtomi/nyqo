@@ -1,0 +1,165 @@
+{
+  "schema": "N2_FINAL204_FINAL_RECEIPT_SAFE_v1",
+  "utc": "2026-10-25T16:02:58.227302+00:00",
+  "status": "TARGET_PASS_ON_FROZEN_N2_FINAL204_ROBUST_TO_ONE_UNRESOLVED_MATH_CASE",
+  "canon_commit": "433c5747dcc992eafc2dfd12b5c543ccffaaa223",
+  "candidate": "C100_v2",
+  "candidate_weight_sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078",
+  "params_total": 497119488,
+  "B0_REFERENCE": {
+    "actual_runs_FULL": [
+      45,
+      45,
+      45
+    ],
+    "reference_run_index": 1,
+    "FULL": 45,
+    "macro": 0.22058823529411764
+  },
+  "K_CONTROL": {
+    "FULL": 53,
+    "macro": 0.25980392156862747
+  },
+  "C100": {
+    "FULL_bounds": [
+      55,
+      56
+    ],
+    "macro_bounds": [
+      0.2696078431372549,
+      0.27450980392156865
+    ],
+    "relative_macro_gain_bounds": [
+      0.22222222222222232,
+      0.24444444444444446
+    ],
+    "required_total_FULL": 52,
+    "all_six_domain_guards_pass_under_both_scenarios": true,
+    "TARGET_verdict": "PASS",
+    "exact_math_score_not_claimed": true
+  },
+  "retention_C100_vs_B0": {
+    "retained": 26,
+    "lost": 19,
+    "gained_bounds": [
+      29,
+      30
+    ]
+  },
+  "retention_C100_vs_K": {
+    "retained": 39,
+    "lost": 14,
+    "gained_bounds": [
+      16,
+      17
+    ]
+  },
+  "uncertainty": {
+    "family_cluster_bootstrap_repetitions": 5000,
+    "seed": 20261024,
+    "macro_delta_95pct_interval_envelope": [
+      -0.0133442265795207,
+      0.11588862328900279
+    ],
+    "diagnostic_only": true,
+    "interval_includes_zero": true,
+    "not_new_TARGET_guard": true
+  },
+  "generation": {
+    "saved_requests": 1020,
+    "actual_requests_including_discarded_technical_attempt": 1021,
+    "cutoffs": 0,
+    "all_native_EOS": 1020,
+    "cache_or_bestof_checkpoint_search": false
+  },
+  "grading": {
+    "unique_answers": 567,
+    "graded": 567,
+    "ungraded": 0,
+    "judges": "one GPT-6.1 Sol medium semantic judge per domain",
+    "model_labels_hidden": true,
+    "immutable_original_ledgers_preserved": true,
+    "same_text_same_contract_reused": true,
+    "unresolved_math_QA": 1,
+    "last_math_owner_retry": "DENIED_BEFORE_EXECUTION;no alternate reader or further retry",
+    "one_QA_flag_does_not_change_TARGET_verdict": true
+  },
+  "original_code_UNKNOWN": {
+    "recovery_unavailable_recorded": true,
+    "later_new_explicit_user_authorized_read": "SUCCESS_exit0",
+    "full_tool_results_stored_before_parsing": true,
+    "raw_audits_cloud_only": true
+  },
+  "external_fixed_diagnostics": {
+    "receipt_path": "/workspace/Nyqo/evaluation/n2_independent_v1/external/results_C100_v1/EXTERNAL_FINAL_RECEIPT.json",
+    "receipt_sha256": "b2328799b621d77fa563a451b7e7c2184587909aa10fad7a63fe85482f22c558",
+    "IFEval64_B0_K_C100": [
+      52,
+      47,
+      46
+    ],
+    "MBPPplus64_B0_K_C100": [
+      0,
+      0,
+      0
+    ],
+    "MBPP_contract": "fixed_no_fence_stripping;all0diagnosticlimitation;notchanged",
+    "external_scores_not_used_to_reselect_or_modify_FINAL": true,
+    "all_actual_TRAIN1600_internal416_bound": true,
+    "full_public_pool_clearance_limitation": "150TRAINinputs fullMBPPpoolnotconfirmed;71exposedtoC100;actualfixedMBPPplus64clearanceexists"
+  },
+  "next_step_under_PLAN8_3": "TARGET confirmed after1600-stage evaluation: stop this cycle; do not proceed to12k automatically",
+  "bank_freshness": "evaluated_once_for_this_stage;futuredevelopment_usemustbedisclosed;noitem-levelclosedfeedbacktoTRAIN",
+  "QA": {
+    "utc": "2026-10-25T16:02:58.226503+00:00",
+    "post_grading_frozen_files_verified": 77,
+    "frozen_mismatches": 0,
+    "domain34_artifacts_verified": 6,
+    "grade_rows567_unique_and_exact": true,
+    "FULL_with_malformed_flags": 0,
+    "FULL_with_unsupported_annotation": 1,
+    "unsupported_annotation_specific_QA": {
+      "same_original_blind_judge": true,
+      "material_false_addition_present": false,
+      "FULL_unchanged": true,
+      "amendments": 0,
+      "private_QA_path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/private/grading_packets/dialogue_context/QA_FULL_UNSUPPORTED_CONSISTENCY.json",
+      "private_QA_sha256": "b05bf315df3ded01f288746ad6258d45491674ae150799707b27218cefed0aa6",
+      "interpretation": "Unsupported annotation is not automatically a material false addition; no new FULL criterion introduced"
+    },
+    "only_unresolved_math_specific_case": 1,
+    "both_math_value_scenarios_TARGET_pass": true,
+    "all_objective_FULL_conflicts_without_existing_reviewflag": 0,
+    "code_FULL_implies_main_function_correct": true,
+    "GPU_lock_free": true,
+    "GPU_compute_apps_empty": true,
+    "bank_rubrics_checkers_runtime_profile_selection_unchanged": true,
+    "public_reports_have_no_closed_text": true
+  },
+  "artifacts": {
+    "FINAL_RESULTS_SAFE.json": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/results_v1/FINAL_RESULTS_SAFE.json",
+      "sha256": "dfdfcf56abb08a6e6c05420810d541a5546d8d72fa6d6be8b4149449f112fd44"
+    },
+    "FINAL_QA_SAFE.json": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/results_v1/FINAL_QA_SAFE.json",
+      "sha256": "61ff732b3812a918e4680ab97159c1fd783689bd19c87d5be062ed5286544097"
+    },
+    "DOMAIN_COUNTS_SAFE.csv": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/results_v1/DOMAIN_COUNTS_SAFE.csv",
+      "sha256": "9c60c619bc8012c061ce11a812c7a193c7de19eda3be4a45c1c0f5fe0c292531"
+    },
+    "GRADER_CONTRACT_IDENTITY.json": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/results_v1/GRADER_CONTRACT_IDENTITY.json",
+      "sha256": "684041a472e1541645493daf3921850f22b80f8db2aae4da06c7f8b4809833ec"
+    }
+  },
+  "safe_permission_journal": {
+    "path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/private/GRADING_BLOCKERS.json",
+    "sha256": "ca84c562ab4a60096f1a15beb4c62df63ce179164dc66965879c033931409cc1"
+  },
+  "closed_content_in_receipt": false,
+  "GPU_lock_free": true,
+  "GPU_compute_apps_empty": true,
+  "HF_upload_or_publication": false
+}

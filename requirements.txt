@@ -1,0 +1,6 @@
+# Direct inference dependencies from the recorded experiment.
+# Install a matching CUDA build of PyTorch for your platform.
+torch==2.11.0
+transformers==5.8.1
+safetensors==0.7.0
+huggingface_hub==1.8.0

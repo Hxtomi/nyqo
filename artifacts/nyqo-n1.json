@@ -1,0 +1,56 @@
+{
+  "schema": "nyqo-checkpoint-v1",
+  "model_family": "Nyqo",
+  "model_name": "Nyqo n1",
+  "model_id": "nyqo-n1",
+  "checkpoint": "nyqo-n1",
+  "availability": "private_archive",
+  "repo_id": "Exequted/Nyqo",
+  "repo_type": "model",
+  "revision": "1e59bda5f5209ab22952f7fd31d5350dba243008",
+  "subfolder": "n2/C100_v2/recovery-20261025T173555Z/payload/n2/runtime/scientific_C1600_v2/checkpoints/group0100",
+  "parameters": 497119488,
+  "num_hidden_layers": 24,
+  "new_positions": [
+    4,
+    5,
+    10,
+    11,
+    16,
+    17,
+    22,
+    23
+  ],
+  "files": [
+    {
+      "name": "chat_template.jinja",
+      "bytes": 5487,
+      "sha256": "ba551d58630afa3190b1be3602e28301f3d2e9bbac978dfc49d6d825171648b6"
+    },
+    {
+      "name": "config.json",
+      "bytes": 4983,
+      "sha256": "7c06400cfce9f52c99d524b0e66eb0340817d155c5a742edaad8f936fbf259f6"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 131,
+      "sha256": "c6a2b4dfe4cd4150a9ea68563de16be2907f09ceb3dd81da7aafffe9d1dbcc43"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 1279535128,
+      "sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 4733389,
+      "sha256": "df1d8d5ec5d091b460562ffd545e4a5e91d17d4a0db7ebe733be34ed374377bd"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 586,
+      "sha256": "098dbd6e0898526e88f6c133bd75ce8b875730e48fd1739d9888700467779ab1"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema": "nyqo-model-comparison-v1",
+  "reported_by": "Artur Markov-Tsoy",
+  "final_scoring_decision_date": "2026-10-27",
+  "source": "Author-supplied comparison summary and final scoring decision.",
+  "task_counts": {
+    "final": 204,
+    "arc_easy": 594,
+    "ifeval": 210,
+    "mbpp_plus": 100
+  },
+  "models": [
+    {
+      "label": "LFM2.5-350M (base)",
+      "passed": {
+        "final": 45,
+        "arc_easy": 336,
+        "ifeval": 159,
+        "mbpp_plus": 3
+      }
+    },
+    {
+      "label": "Nyqo n1",
+      "passed": {
+        "final": 56,
+        "arc_easy": 370,
+        "ifeval": 153,
+        "mbpp_plus": 13
+      }
+    },
+    {
+      "label": "SmolLM2",
+      "passed": {
+        "final": 43,
+        "arc_easy": 290,
+        "ifeval": 70,
+        "mbpp_plus": 22
+      }
+    },
+    {
+      "label": "Qwen2.5-0.5B",
+      "passed": {
+        "final": 46,
+        "arc_easy": 339,
+        "ifeval": 52,
+        "mbpp_plus": 37
+      }
+    },
+    {
+      "label": "Granite-350M",
+      "passed": {
+        "final": 45,
+        "arc_easy": 353,
+        "ifeval": 105,
+        "mbpp_plus": 31
+      }
+    },
+    {
+      "label": "Qwen 4B (reference)",
+      "passed": {
+        "final": 138,
+        "arc_easy": 450,
+        "ifeval": 181,
+        "mbpp_plus": 63
+      }
+    }
+  ],
+  "final_scoring_decision": {
+    "authority": "Artur Markov-Tsoy, project author and judge",
+    "changes": [
+      {
+        "model": "Nyqo n1",
+        "selected_percentage": "27.45",
+        "selected_passed": 56,
+        "decision": "The project author confirmed the finalized FINAL total on 27 October 2026."
+      },
+      {
+        "model": "Qwen2.5-0.5B",
+        "previous_reported_passed_range": [
+          44,
+          46
+        ],
+        "selected_percentage": "22.55",
+        "selected_passed": 46
+      },
+      {
+        "model": "Granite-350M",
+        "previous_reported_passed_range": [
+          45,
+          51
+        ],
+        "selected_percentage": "22.06",
+        "selected_passed": 45
+      },
+      {
+        "model": "Qwen 4B (reference)",
+        "previous_reported_passed_range": [
+          138,
+          173
+        ],
+        "selected_percentage": "67.65",
+        "selected_passed": 138
+      }
+    ],
+    "count_derivation": "Each selected two-decimal percentage uniquely identifies the recorded integer count out of 204 tasks.",
+    "new_model_inference": false,
+    "independently_recomputed_item_grades": false,
+    "note": "The four current FINAL totals follow the author's final scoring decisions. Individual prompts, responses, and grades are not included."
+  },
+  "additional_model_status": "Author-reported descriptive references; exact checkpoint IDs, revisions, and per-model inference records are not included in the release evidence."
+}

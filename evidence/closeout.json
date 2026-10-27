@@ -1,0 +1,254 @@
+{
+  "schema": "nyqo-N2-C100-independent-closeout-v1",
+  "date": "2026-10-25",
+  "scope": "Complete independent spec audit, input-only overlap coverage, private CODE100 preservation and canonical status reconciliation; no new model computation.",
+  "execution_plan_commit": "433c5747dcc992eafc2dfd12b5c543ccffaaa223",
+  "candidate": {
+    "id": "C100_v2",
+    "weight_sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078",
+    "parameters": 497119488,
+    "trainable": 142635520,
+    "frozen": 354483968,
+    "updates": 100,
+    "unique_exposed_rows": 800,
+    "active_training_tokens": 107728
+  },
+  "TRAIN": {
+    "rows": 1600,
+    "active_tokens_per_complete_arm": 214502,
+    "sha256": "1dca9ef3ae6cc16e3c69037dfc8810b117c007c5711886bf9b3489f950cc8ef0",
+    "all_attempt_scientific_tokens": 643862,
+    "all_attempt_updates": 600,
+    "valid_R_C_pair_updates": 400,
+    "old_R_v1_quarantined": true
+  },
+  "TARGET": {
+    "bank": "N2-FINAL204",
+    "bank_sha256": "4ec60029fbc0666df7016a8b3b4add0635a1b78b900879f5474588968583f28f",
+    "B0_actual_runs": [
+      45,
+      45,
+      45
+    ],
+    "B0_reference_run": 1,
+    "K": 53,
+    "C100_bounds": [
+      55,
+      56
+    ],
+    "required_C100_minimum": 52,
+    "relative_macro_gain_percent_bounds": [
+      22.222222222222232,
+      24.444444444444446
+    ],
+    "domain_counts": {
+      "source_use": {
+        "B0": 8,
+        "C100": [
+          7,
+          7
+        ],
+        "minimum": 7
+      },
+      "instructions": {
+        "B0": 5,
+        "C100": [
+          7,
+          7
+        ],
+        "minimum": 4
+      },
+      "reasoning_math": {
+        "B0": 0,
+        "C100": [
+          1,
+          2
+        ],
+        "minimum": null
+      },
+      "knowledge_uncertainty": {
+        "B0": 12,
+        "C100": [
+          19,
+          19
+        ],
+        "minimum": 10
+      },
+      "dialogue_context": {
+        "B0": 17,
+        "C100": [
+          18,
+          18
+        ],
+        "minimum": 13
+      },
+      "code": {
+        "B0": 3,
+        "C100": [
+          3,
+          3
+        ],
+        "minimum": 3
+      }
+    },
+    "verdict": "PASS_ROBUST_TO_ONE_UNRESOLVED_MATH_CASE",
+    "retained_B0": 26,
+    "lost_B0": 19,
+    "gained_bounds": [
+      29,
+      30
+    ],
+    "family_cluster_interval_includes_zero": true,
+    "receipt_sha256": "68bfcfef25a68d7adde325a62232dae89d82e25a24f6467901723132d895fb02"
+  },
+  "transfer": {
+    "ARC_Easy_acc_norm": {
+      "N": 594,
+      "B0": 336,
+      "C100": 370,
+      "absolute_percentage_point_delta": 5.723905723905724,
+      "paired95_delta": [
+        0.030303030303030304,
+        0.08585858585858586
+      ],
+      "simultaneous97_5_delta": [
+        0.025252525252525252,
+        0.08922558922558922
+      ],
+      "role": "primary; positive on this sampled distribution; standard causal choice likelihood, not generated FULL"
+    },
+    "IFEval_strict": {
+      "N": 210,
+      "B0": 159,
+      "C100": 153,
+      "paired95_delta": [
+        -0.07177033492822966,
+        0.014354066985645933
+      ],
+      "B0_cutoffs": 10,
+      "C100_cutoffs": 0,
+      "completion_guard_sensitivity": [
+        153,
+        153
+      ],
+      "new_tokens_limit": 2048,
+      "old64_separate": true,
+      "role": "primary; uncertainty includes zero, no equivalence or improvement established"
+    },
+    "CODE100_base_plus": {
+      "N": 100,
+      "B0": 3,
+      "C100": 13,
+      "base_only": [
+        3,
+        16
+      ],
+      "paired95_delta": [
+        0.0392156862745098,
+        0.16382198720227473
+      ],
+      "clusters": 87,
+      "all_passing_C100_format_compliant": true,
+      "role": "secondary diagnostic; fixed raw-or-single-fence extraction, no code repair; old64 no-stripping score unchanged"
+    },
+    "old_external64": {
+      "IFEval_B0_K_C100": [
+        52,
+        47,
+        46
+      ],
+      "MBPPplus_B0_K_C100": [
+        0,
+        0,
+        0
+      ],
+      "MBPP_limitation": "all raw fenced responses fail original no-stripping profile"
+    },
+    "candidate_reselection": false,
+    "freeze_and_result_hashes_verified": true,
+    "primary_and_code_intervals_recomputed": true
+  },
+  "coverage": {
+    "previous_full_inputs": 1450,
+    "added_full_inputs": 150,
+    "total_full_inputs": 1600,
+    "remaining_metadata_only": 0,
+    "delta_families": 91,
+    "public_source_counts": {
+      "ARC": 2376,
+      "IFEval": 541,
+      "MBPPplus": 378
+    },
+    "delta_exact_matches": 0,
+    "semantic_candidate_pairs": 55,
+    "semantic_candidate_items": 39,
+    "new_concrete_family_conflicts": 0,
+    "unresolved_candidate_pairs": 0,
+    "selected_slice_candidate_items": {
+      "ARC": 2,
+      "IFEval": 0,
+      "CODE100": 8
+    },
+    "frozen_samples_and_scores_unchanged": true,
+    "post_outcome_input_only_audit": true,
+    "exhaustive_semantic_guarantee": false,
+    "pretraining_contamination": "unknown",
+    "targets_compared": 0,
+    "receipt_sha256": "2f941550c36ee371d09b1bf88f3bc2443143b4743f1f8e5d4deb62cd5a099c49"
+  },
+  "preservation": {
+    "private_HF_core_commit": "1e59bda5f5209ab22952f7fd31d5350dba243008",
+    "private_GitHub_recovery_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+    "HF_supplement_branch": "supplements-C100-20261025T173555Z",
+    "HF_supplement_commit": "f5dec7b04f34e16db276f06cfa7ceec121f8d10e",
+    "HF_supplement_prefix": "n2/C100_v2/recovery-20261025T173555Z/supplements/independent-closeout-20261025-yuna-v1/",
+    "CODE100_bundle_sha256": "20917e997947feac07e3737890aa8892626a72d2dd0ddbc94117abbf399550d9",
+    "CODE100_bundle_members": 42,
+    "remote_bundle_download_and_member_verification": true,
+    "CPU_restore_state": "PASS",
+    "CUDA_restore_state": "PASS",
+    "fresh_machine_installation_tested": false,
+    "closed_FINAL_content_or_credentials_in_shared_archive": false,
+    "private_GitHub_recovery_repository": "Hxtomi/nyqo-devs"
+  },
+  "known_limits": [
+    "One final math response remains unresolved; both values satisfy TARGET.",
+    "Only one selected training seed/checkpoint evaluated on a small internal FINAL; final family-bootstrap interval includes zero.",
+    "Transfer supports ARC and the secondary code diagnostic; instruction-following gain is unconfirmed.",
+    "Input comparisons now cover1600 inputs, but bounded candidate retrieval is not exhaustive semantic decontamination, and pretraining contamination is unknown.",
+    "Closed FINAL raw questions/responses/rubrics remain with the independent owner; they are not published in this shared audit or CODE100 archive."
+  ],
+  "next": "Close this small N2 cycle under PLAN8.3; retain C100. No automatic12k extension after confirmed TARGET. Select any future experiment from remaining concrete limitations.",
+  "safeguards": {
+    "TARGET_and_PLAN_unchanged": true,
+    "new_training_steps": 0,
+    "new_model_inference_calls": 0,
+    "no_closed_exam_feedback_to_TRAIN": true
+  },
+  "source_artifacts": {
+    "FINAL_receipt": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/final_stage/C100_v2/results_v1/FINAL_RECEIPT_SAFE.json",
+      "sha256": "68bfcfef25a68d7adde325a62232dae89d82e25a24f6467901723132d895fb02"
+    },
+    "transfer_receipt": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/transfer_v1/safe/TRANSFER_RECEIPT_SAFE_v2.json",
+      "sha256": "02a8715df1370b243c6ca17438ca15439b278ec4d5088657dabfa65ac01a38ce"
+    },
+    "CODE100_results": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/transfer_v1/safe/CODE100_RESULTS_SAFE_v1.json",
+      "sha256": "e0091ffe2ed512c68b3845e1429ea879656e1ca46b20e8a0355d9ced9a420a56"
+    },
+    "input150_closure": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/transfer_v1/closure_20261025_yuna_v1/INPUT150_CLOSURE_SAFE.json",
+      "sha256": "2f941550c36ee371d09b1bf88f3bc2443143b4743f1f8e5d4deb62cd5a099c49"
+    },
+    "HF_closeout": {
+      "path": "/workspace/Nyqo/evaluation/n2_independent_v1/transfer_v1/closure_20261025_yuna_v1/HF_CLOSEOUT_RECEIPT.json",
+      "sha256": "7455a9f9c8a46d5d091ce49f3cb4803c8b0976cbbe7e46f757c100780ee299a7"
+    },
+    "GPU_restore": {
+      "path": "/workspace/Nyqo/n2/runs/finalist_C100_v2/recovery_release_v1/GPU_RESTORE_RECEIPT.json",
+      "sha256": "19695a088fab3c9297657f00db07414b145bfdd0a3d50d7d2ebe633cd777009c"
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "status": "TRAIN1600_V2_LITERAL_CORRECTIONS_FROZEN_R_C_PREPARED_NOT_EXECUTED",
+  "utc": "2026-10-25T13:11:12.816951+00:00",
+  "plan_commit": "433c5747dcc992eafc2dfd12b5c543ccffaaa223",
+  "version": 2,
+  "data_path": "/workspace/Nyqo/n2/data/train1600/TRAIN1600_v2.jsonl",
+  "data_sha256": "1dca9ef3ae6cc16e3c69037dfc8810b117c007c5711886bf9b3489f950cc8ef0",
+  "order_path": "/workspace/Nyqo/n2/runtime/TRAIN1600_ORDER_v2.json",
+  "order_file_sha256": "a15a1a58687690c843e6b0386fb690881fb0554059771a8f54103ec0887af2f3",
+  "order_object_sha256": "ee9ec24e7d1864f1fb27318acb8bd34e869d231abffa4e9e2ce669793abe0e93",
+  "rows": 1600,
+  "unique_IDs": 1600,
+  "domain_counts": {
+    "code": 800,
+    "source_use": 160,
+    "instructions": 160,
+    "reasoning_math": 160,
+    "knowledge_uncertainty": 160,
+    "dialogue_context": 160
+  },
+  "active_response_EOS_tokens_per_arm": 214502,
+  "runtime_summary": {
+    "rows": 1600,
+    "groups": 200,
+    "tokens": {
+      "ce": {
+        "code": 152810,
+        "other": 61692
+      },
+      "native": 22682,
+      "by_domain": {
+        "source_use": {
+          "ce": 16034,
+          "native_K": 3439,
+          "native_B0": 1017,
+          "corrected_or_external": 11578
+        },
+        "instructions": {
+          "ce": 5497,
+          "native_K": 1312,
+          "native_B0": 754,
+          "corrected_or_external": 3431
+        },
+        "reasoning_math": {
+          "ce": 21515,
+          "native_K": 4736,
+          "native_B0": 3793,
+          "corrected_or_external": 12986
+        },
+        "knowledge_uncertainty": {
+          "ce": 13944,
+          "native_K": 2059,
+          "native_B0": 2618,
+          "corrected_or_external": 9267
+        },
+        "dialogue_context": {
+          "ce": 4702,
+          "native_K": 625,
+          "native_B0": 274,
+          "corrected_or_external": 3803
+        },
+        "code": {
+          "ce": 152810,
+          "native_K": 1113,
+          "native_B0": 942,
+          "corrected_or_external": 150755
+        }
+      },
+      "by_component_reference": {
+        "code": {
+          "native_K": 1113,
+          "native_B0": 942,
+          "corrected_or_external": 150755
+        },
+        "other": {
+          "native_K": 12171,
+          "native_B0": 8456,
+          "corrected_or_external": 41065
+        }
+      },
+      "by_reference": {
+        "native_K": 13284,
+        "native_B0": 9398,
+        "corrected_or_external": 191820
+      }
+    },
+    "groups_without_native": 28,
+    "order_sha256": "ee9ec24e7d1864f1fb27318acb8bd34e869d231abffa4e9e2ce669793abe0e93",
+    "encoded_sha256": "bea4bce5c153f65a88c100e03c0d28d5757762833de87a32b50a285364387fd0",
+    "maximum_context_tokens": 1857,
+    "mix": {
+      "group_size": 8,
+      "code_per_group": 4,
+      "ce_weights": {
+        "code": 1.0,
+        "other": 1.0
+      },
+      "kl_weight": 1.0,
+      "normalization": "group_component_active_tokens_and_group_native_tokens"
+    },
+    "seed": 20261024
+  },
+  "prepared_runs": {
+    "R": {
+      "run_dir": "/workspace/Nyqo/n2/runtime/scientific_R1600_v2",
+      "prepared_path": "/workspace/Nyqo/n2/runtime/scientific_R1600_v2/prepared.json",
+      "prepared_sha256": "a1346b9656c47b8bce27e1c7fad036cf63d93c8814f0dabe6970ae61a1c79f28"
+    },
+    "C": {
+      "run_dir": "/workspace/Nyqo/n2/runtime/scientific_C1600_v2",
+      "prepared_path": "/workspace/Nyqo/n2/runtime/scientific_C1600_v2/prepared.json",
+      "prepared_sha256": "ee41ab97562d07984bf5f879e32d5a8ac4f5eacf656b6ce65d8778fad538b094"
+    }
+  },
+  "runtime_sha256": "c903300879d41c3ddc47212d4d58b02c01162cf83f018bf4d392cc44e228f9ea",
+  "driver_sha256": "a39447555e18c746e532ac646d13bb32ddcb58ac9add095711225b449ed34657",
+  "parent_files_verified": {
+    "B0": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e",
+    "K500": "676518a2085c9e2ea9ce06c2f7fb1ae9128570db2cd6de618657e31e7041cd2c"
+  },
+  "updates_per_arm": 200,
+  "warmup": 6,
+  "same_seed": 20261024,
+  "same_CE_KL_recipe": true,
+  "fresh_R_parent": "/workspace/Nyqo/models/E497K-update0500",
+  "fresh_C_parent": "/workspace/Nyqo/models/LiquidAI--LFM2.5-350M/9e6c6ccf47cd318696e137d381a7ded8fe4df09f plus originalidentityexpansion",
+  "optimizer_RNG_fresh_not_resume": true,
+  "corrected_target_ids": [
+    "n2-expand-code-421",
+    "n2-expand-code-422"
+  ],
+  "other1598_rows_byte_identical": true,
+  "all_prompts_IDs_and_order_unchanged": true,
+  "diff_path": "/workspace/Nyqo/n2/data/train1600/TRAIN1600_v1_to_v2.diff.json",
+  "diff_sha256": "cddc77430e5938ad617408af8ac29210e12191160b01a372f4002cec4381063a",
+  "target_diff_path": "/workspace/Nyqo/n2/data/train1600/TRAIN1600_v1_to_v2.targets.diff",
+  "target_diff_sha256": "b58d8b198ee04ac77d1aeb7a74d9a1942375c1e9bf0094336781af095e094289",
+  "independent_QA_path": "/workspace/Nyqo/n2/qa/get_mid421_422_contract_gate_v1/peer_review.jsonl",
+  "independent_QA_sha256": "c1e7f0352a988c0ebd241ef5c757fc7477820679afeb3d1f394cfd502daa8f12",
+  "v1_freeze_unchanged_sha256": "520a9d452ad9a976d86a867fa2b5f864683ca38fc6e63e831b4be56d47b0fe9f",
+  "v1_data_unchanged_sha256": "234f3d511ded4a55aac696519e7f4ef9af3ed38e14eb0ac1865a84465095f907",
+  "v1_R_usage": "QUARANTINED_AUDIT_ONLY_NOT_FINALIST_NOT_RESUME_PARENT",
+  "budget": {
+    "utc": "2026-10-25T13:11:12.816951+00:00",
+    "approved_source_message_id": "Sentinel_96f3816df0cc81919d85ab479c5827c5",
+    "approved_total_active_response_EOS_tokens_all_attempts": 643862,
+    "already_spent_quarantined_R_v1_tokens": 214858,
+    "remaining_for_fresh_valid_pair": 429004,
+    "fresh_R_v2_tokens": 214502,
+    "fresh_C_v2_tokens": 214502,
+    "already_spent_updates": 200,
+    "planned_new_updates": 400,
+    "cost_history_not_reset": true
+  },
+  "new_scientific_updates": 0,
+  "all_attempts_scientific_updates_so_far": 200,
+  "technical_pilot_repeated": false,
+  "closed_exam_read": false
+}

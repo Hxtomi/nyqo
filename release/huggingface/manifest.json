@@ -1,0 +1,67 @@
+{
+  "model_name": "Nyqo n1",
+  "repo_id": "Hxtomi/nyqo",
+  "parameters": 497119488,
+  "files": [
+    {
+      "name": "chat_template.jinja",
+      "bytes": 5487,
+      "sha256": "ba551d58630afa3190b1be3602e28301f3d2e9bbac978dfc49d6d825171648b6"
+    },
+    {
+      "name": "config.json",
+      "bytes": 4983,
+      "sha256": "7c06400cfce9f52c99d524b0e66eb0340817d155c5a742edaad8f936fbf259f6"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 131,
+      "sha256": "c6a2b4dfe4cd4150a9ea68563de16be2907f09ceb3dd81da7aafffe9d1dbcc43"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 1279535128,
+      "sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 4733389,
+      "sha256": "df1d8d5ec5d091b460562ffd545e4a5e91d17d4a0db7ebe733be34ed374377bd"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 586,
+      "sha256": "098dbd6e0898526e88f6c133bd75ce8b875730e48fd1739d9888700467779ab1"
+    },
+    {
+      "name": "README.md",
+      "bytes": 7387,
+      "sha256": "cd09307454cd403191d3ff39567859a907a45705a34b0d07876ac2c54d1fe3e0"
+    },
+    {
+      "name": "LICENSE",
+      "bytes": 10574,
+      "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c"
+    },
+    {
+      "name": "NOTICE",
+      "bytes": 1095,
+      "sha256": "2ded5acad71a7785c475b4074daefdfe974fb74ba90c86d2871fe02ec6d0d65e"
+    },
+    {
+      "name": "assets/nyqo-benchmarks.svg",
+      "bytes": 10148,
+      "sha256": "dba7d62e3d0a25d3da2dfa6c5457f5a5635ebda5d85e94ed7ad07c250f3ff4ef"
+    },
+    {
+      "name": "assets/badges/github.svg",
+      "bytes": 550,
+      "sha256": "287e3c7b8bb6f477f591bd651c05f3586050b31ffa11d073a974d9ba66ac86dc"
+    },
+    {
+      "name": "assets/badges/huggingface.svg",
+      "bytes": 576,
+      "sha256": "61b1574a0a504958e0e610ee55448e8a8ee5f051dc6ead2ce409590fe01392f0"
+    }
+  ]
+}

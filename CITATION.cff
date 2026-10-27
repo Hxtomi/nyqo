@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this implementation or its evaluation record, please cite this repository."
+type: software
+title: "Nyqo n1"
+authors:
+  - family-names: "Markov-Tsoy"
+    given-names: "Artur"
+version: "n1"
+date-released: "2026-10-26"
+url: "https://github.com/Hxtomi/nyqo"
+repository-code: "https://github.com/Hxtomi/nyqo"
+abstract: >-
+  Nyqo n1 is a compact, general-purpose language model with 497M parameters.
+  It builds on LiquidAI LFM2.5-350M through block expansion, supervised
+  post-training, and distillation from the base model and an earlier Nyqo
+  checkpoint. This repository provides the
+  model implementation, inference tools, and evaluation results.
+keywords:
+  - compact language models
+  - model adaptation
+  - knowledge distillation
+  - block expansion

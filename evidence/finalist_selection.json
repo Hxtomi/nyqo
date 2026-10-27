@@ -1,0 +1,353 @@
+{
+  "utc": "2026-10-25T13:54:00.319289+00:00",
+  "status": "ONE_FINALIST_FIXED_BY_DEV_BEFORE_EXTERNAL_OR_FINAL_NOT_TARGET_CONFIRMED",
+  "candidate_id": "C100",
+  "model_path": "/workspace/Nyqo/n2/runtime/scientific_C1600_v2/checkpoints/group0100",
+  "model_weight_sha256": "6fcd99004b78850b5a323224a9a9833c9bcb13faa8eb762092aed8922fcb0078",
+  "checkpoint_manifest_sha256": "28b8c26375d3b3df3b9919f882ce5881e39f504fe1e87b8b3cdf60966e42484f",
+  "training_state_path": "/workspace/Nyqo/n2/runtime/scientific_C1600_v2/checkpoints/group0100/training_state.pt",
+  "training_state_sha256": "a167ac9cd094d8323816b92628a2f06a6e4627cc34bd89bbf940831e7670df94",
+  "parent": "cleanB0 + originalN1identityexpansion",
+  "params_total": 497119488,
+  "params_trainable": 142635520,
+  "params_frozen": 354483968,
+  "actual_updates": 100,
+  "actual_unique_rows_exposed": 800,
+  "actual_active_response_EOS_tokens": 107728,
+  "stage_common_frozen_rows": 1600,
+  "remaining_unexposed_in_stage": 800,
+  "actual_seen_ids_path": "/workspace/Nyqo/n2/runs/finalist_C100_v2/EXPOSED800_TRAIN.ids.txt",
+  "actual_seen_ids_sha256": "4842c7d00d9aacca4e7034f7ce1c6e298042a7521da5baa49e660bcc6f16d6c8",
+  "unexposed_frozen_ids_path": "/workspace/Nyqo/n2/runs/finalist_C100_v2/UNEXPOSED800_FROZEN.ids.txt",
+  "unexposed_frozen_ids_sha256": "7bd0355cd1438782a7a8b6a2df0477e7dcda8ed2fc5162e4b039d515ebacc753",
+  "data_v2_sha256": "1dca9ef3ae6cc16e3c69037dfc8810b117c007c5711886bf9b3489f950cc8ef0",
+  "order_object_sha256": "ee9ec24e7d1864f1fb27318acb8bd34e869d231abffa4e9e2ce669793abe0e93",
+  "selection_rule": "PLAN8.1 firstpreferalldomainconditions;amongthosemaxmacroFULL,thenfewerlossestoB0/K,thensimplerinference. C100soleguardpassingnewcandidate;highestaggregateR200failscodeguard.",
+  "DEV_counts": {
+    "B0": {
+      "FULL": 18,
+      "N": 84,
+      "macro_FULL": 0.21428571428571427,
+      "by_domain": {
+        "source_use": {
+          "FULL": 3,
+          "N": 14
+        },
+        "instructions": {
+          "FULL": 0,
+          "N": 14
+        },
+        "reasoning_math": {
+          "FULL": 0,
+          "N": 14
+        },
+        "knowledge_uncertainty": {
+          "FULL": 4,
+          "N": 14
+        },
+        "dialogue_context": {
+          "FULL": 8,
+          "N": 14
+        },
+        "code": {
+          "FULL": 3,
+          "N": 14
+        }
+      }
+    },
+    "K": {
+      "FULL": 22,
+      "N": 84,
+      "macro_FULL": 0.2619047619047619,
+      "by_domain": {
+        "source_use": {
+          "FULL": 5,
+          "N": 14
+        },
+        "instructions": {
+          "FULL": 1,
+          "N": 14
+        },
+        "reasoning_math": {
+          "FULL": 0,
+          "N": 14
+        },
+        "knowledge_uncertainty": {
+          "FULL": 5,
+          "N": 14
+        },
+        "dialogue_context": {
+          "FULL": 9,
+          "N": 14
+        },
+        "code": {
+          "FULL": 2,
+          "N": 14
+        }
+      }
+    },
+    "R100": {
+      "FULL": 19,
+      "N": 84,
+      "macro_FULL": 0.2261904761904762,
+      "by_domain": {
+        "source_use": {
+          "FULL": 5,
+          "N": 14
+        },
+        "instructions": {
+          "FULL": 0,
+          "N": 14
+        },
+        "reasoning_math": {
+          "FULL": 0,
+          "N": 14
+        },
+        "knowledge_uncertainty": {
+          "FULL": 4,
+          "N": 14
+        },
+        "dialogue_context": {
+          "FULL": 8,
+          "N": 14
+        },
+        "code": {
+          "FULL": 2,
+          "N": 14
+        }
+      }
+    },
+    "R200": {
+      "FULL": 25,
+      "N": 84,
+      "macro_FULL": 0.2976190476190476,
+      "by_domain": {
+        "source_use": {
+          "FULL": 8,
+          "N": 14
+        },
+        "instructions": {
+          "FULL": 0,
+          "N": 14
+        },
+        "reasoning_math": {
+          "FULL": 0,
+          "N": 14
+        },
+        "knowledge_uncertainty": {
+          "FULL": 6,
+          "N": 14
+        },
+        "dialogue_context": {
+          "FULL": 10,
+          "N": 14
+        },
+        "code": {
+          "FULL": 1,
+          "N": 14
+        }
+      }
+    },
+    "C100": {
+      "FULL": 19,
+      "N": 84,
+      "macro_FULL": 0.22619047619047616,
+      "by_domain": {
+        "source_use": {
+          "FULL": 4,
+          "N": 14
+        },
+        "instructions": {
+          "FULL": 0,
+          "N": 14
+        },
+        "reasoning_math": {
+          "FULL": 0,
+          "N": 14
+        },
+        "knowledge_uncertainty": {
+          "FULL": 4,
+          "N": 14
+        },
+        "dialogue_context": {
+          "FULL": 8,
+          "N": 14
+        },
+        "code": {
+          "FULL": 3,
+          "N": 14
+        }
+      }
+    },
+    "C200": {
+      "FULL": 22,
+      "N": 84,
+      "macro_FULL": 0.2619047619047619,
+      "by_domain": {
+        "source_use": {
+          "FULL": 6,
+          "N": 14
+        },
+        "instructions": {
+          "FULL": 0,
+          "N": 14
+        },
+        "reasoning_math": {
+          "FULL": 0,
+          "N": 14
+        },
+        "knowledge_uncertainty": {
+          "FULL": 4,
+          "N": 14
+        },
+        "dialogue_context": {
+          "FULL": 10,
+          "N": 14
+        },
+        "code": {
+          "FULL": 2,
+          "N": 14
+        }
+      }
+    }
+  },
+  "DEV_selected_vs_B0": {
+    "domains": {
+      "source_use": {
+        "N": 14,
+        "B0_FULL": 3,
+        "candidate_FULL": 4,
+        "minimum": 3,
+        "relative_change": 0.3333333333333333,
+        "domain_guard_pass": true
+      },
+      "instructions": {
+        "N": 14,
+        "B0_FULL": 0,
+        "candidate_FULL": 0,
+        "minimum": null,
+        "relative_change": null,
+        "domain_guard_pass": true
+      },
+      "reasoning_math": {
+        "N": 14,
+        "B0_FULL": 0,
+        "candidate_FULL": 0,
+        "minimum": null,
+        "relative_change": null,
+        "domain_guard_pass": true
+      },
+      "knowledge_uncertainty": {
+        "N": 14,
+        "B0_FULL": 4,
+        "candidate_FULL": 4,
+        "minimum": 4,
+        "relative_change": 0.0,
+        "domain_guard_pass": true
+      },
+      "dialogue_context": {
+        "N": 14,
+        "B0_FULL": 8,
+        "candidate_FULL": 8,
+        "minimum": 7,
+        "relative_change": 0.0,
+        "domain_guard_pass": true
+      },
+      "code": {
+        "N": 14,
+        "B0_FULL": 3,
+        "candidate_FULL": 3,
+        "minimum": 3,
+        "relative_change": 0.0,
+        "domain_guard_pass": true
+      }
+    },
+    "B0_macro": 0.21428571428571427,
+    "candidate_macro": 0.22619047619047616,
+    "relative_macro_gain": 0.05555555555555549,
+    "expanded_overall_minimum": 21,
+    "overall_gain_pass": false,
+    "zero_overall_B0_status": null,
+    "retained": 10,
+    "lost": 8,
+    "gained": 9,
+    "unchanged_failures": 57,
+    "DEV_only_TARGET_conditions_not_FINAL_confirmation": false
+  },
+  "DEV_selected_retention_vs_B0": {
+    "retained": 10,
+    "lost": 8,
+    "gained": 9
+  },
+  "DEV_selected_retention_vs_K": {
+    "retained": 15,
+    "lost": 7,
+    "gained": 4
+  },
+  "DEV_selected_pairs": {
+    "both_correct": 0,
+    "pair_count": 9,
+    "both_correct_rate": 0.0
+  },
+  "DEV_family_cluster_interval_diagnostic_only": {
+    "macro_delta_95pct_interval": [
+      -0.075,
+      0.10782967032967034
+    ],
+    "repetitions": 5000,
+    "seed": 20261024,
+    "method": "paired family-cluster resampling within each domain",
+    "diagnostic_only": true
+  },
+  "DEV_scope_limit": "84developmenttasks14perdomain;notindependentFINALconfirmation. instructions/mathFULL0forallcontrolsandnewcandidates. No15percentmacrogoalclaim.",
+  "score_path": "/workspace/Nyqo/n2/qa/dev84_rc1600_v2/scores/DEV_RC1600_v2_SCORES.json",
+  "score_sha256": "09757254fe58a551cc1edd298dfb9c912e17179dd296728e31630b51547e48d9",
+  "grade_contract_sha256": "a288602e7050f0cf5bf5ad14fdd1a2d38a5fb502813c741460f6153efce51c01",
+  "generation_profile": {
+    "dtype": "BF16",
+    "attention": "sdpa",
+    "cache": true,
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 768,
+    "max_total_tokens": 2048,
+    "eos_token_id": 7,
+    "pad_token_id": 0,
+    "batch_size": 1,
+    "template": "native B0 add_generation_prompt=True",
+    "parser": "n1.runtime.parse_answer",
+    "seed": 221026,
+    "software": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.8.1",
+      "tokenizers": "0.22.2"
+    }
+  },
+  "generation_profile_sha256": "ba99a508c1c81145d98a9f19f27bcf7dda962a4879fd672456202826025d2367",
+  "tokenizer_sha256": "df1d8d5ec5d091b460562ffd545e4a5e91d17d4a0db7ebe733be34ed374377bd",
+  "template_sha256": "ba551d58630afa3190b1be3602e28301f3d2e9bbac978dfc49d6d825171648b6",
+  "parser_runtime_sha256": "2fc16e13d1064dc3a9413aec48a1d07f3e5babe558b37f43eff5559e0299cf94",
+  "expanded_runtime_sha256": "705c67e83f70d47a9199892a1ccede1ca11e703498d451bf2c77bcf2f117fff9",
+  "generator_sha256": "b9568cbc24cf6ce0f1be69af1bf54c0106dd1ccb927a6a77aa9f64a13c7cbd92",
+  "FINAL_read_or_inference": false,
+  "external_tests_read_or_inference": false,
+  "next_prescribed_checks": "MBPP+64 andIFEval64 thenoneFINAL204 versusitsownB0withKcontrol;candidateidentityfixedbeforeanysuchresults. TRAINauthorneverreadprivateexam. Independentownercoordinatedbyparent.",
+  "conditional_continuation_if_not_TARGET": {
+    "starting_seen_unique_rows": 800,
+    "remaining_unexposed_frozen_rows": 800,
+    "new_unique_dataset_rows_to_add_for_12000_cumulative": 10400,
+    "additional_unique_presentations_to_reach12000": 11200,
+    "moments_RNG_resume_required": true,
+    "newmix_budget_horizon_not_set_or_started": true
+  },
+  "training_cost_all_attempts": {
+    "valid_R_C_updates": 400,
+    "old_quarantined_R_updates": 200,
+    "all_updates": 600,
+    "valid_pair_active_tokens": 429004,
+    "quarantined_old_R_tokens": 214858,
+    "approved_and_consumed_total_active_tokens": 643862
+  },
+  "old_R_v1_excluded": true,
+  "TARGET_and_bank_unchanged": true
+}

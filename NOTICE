@@ -1,0 +1,14 @@
+Nyqo n1
+Copyright 2026 Artur Markov-Tsoy
+
+Nyqo-authored source code and documentation are licensed under the
+Apache License, Version 2.0. See LICENSE.
+
+The Nyqo n1 model weights, model configuration, tokenizer, and chat template
+are derived from LiquidAI/LFM2.5-350M and remain subject to the LFM Open
+License v1.0. Their license and modification notice are distributed in
+release/huggingface/LICENSE and release/huggingface/NOTICE.
+
+Third-party software, model assets, and benchmark materials retain their
+respective licenses. The training corpus and closed evaluation banks are
+not included in this release.

@@ -1,0 +1,5 @@
+[
+  {"role": "user", "content": "A jar contains 8 red and 5 blue marbles. How many marbles are there?"},
+  {"role": "assistant", "content": "There are 13 marbles."},
+  {"role": "user", "content": "If I remove 3 red marbles, how many remain?"}
+]

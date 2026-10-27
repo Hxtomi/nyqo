@@ -1,0 +1,100 @@
+{
+  "schema": "nyqo-source-provenance-v1",
+  "prepared": "2026-10-26",
+  "note": "Original scientific sources and three historical receipts are copied verbatim. New nyqo/ interface, documentation, and tests are separate packaging.",
+  "files": [
+    {
+      "path": "research/original/n1/expanded_runtime.py",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n1/expanded_runtime.py",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "3db2dec045bc86709d044a1f9ec84840bfe54c3f",
+      "sha256": "705c67e83f70d47a9199892a1ccede1ca11e703498d451bf2c77bcf2f117fff9",
+      "bytes": 5503
+    },
+    {
+      "path": "research/original/n1/runtime.py",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n1/runtime.py",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "b2950ba939160af1f1a91611cbaaa74e5833817a",
+      "sha256": "2fc16e13d1064dc3a9413aec48a1d07f3e5babe558b37f43eff5559e0299cf94",
+      "bytes": 10163
+    },
+    {
+      "path": "research/original/n2/runtime/n2_runtime.py",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n2/runtime/n2_runtime.py",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "521b7e79f66fead8f4d77a2f46d1b7e8746dcf5f",
+      "sha256": "c903300879d41c3ddc47212d4d58b02c01162cf83f018bf4d392cc44e228f9ea",
+      "bytes": 33298
+    },
+    {
+      "path": "research/original/n2/runtime/train.py",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n2/runtime/train.py",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "8c842ea33e8bd7e2d3bb4344bef11a1879a9f334",
+      "sha256": "a39447555e18c746e532ac646d13bb32ddcb58ac9add095711225b449ed34657",
+      "bytes": 11697
+    },
+    {
+      "path": "research/original/n2/runtime/run_scientific_arm_v2.py",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n2/runtime/run_scientific_arm_v2.py",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "d14b23abeec03d27946455af47d01265125479b4",
+      "sha256": "263a2b4affd4697942b912a391f5350754e2b8bceeefcc9a17a1291c44f17203",
+      "bytes": 3523
+    },
+    {
+      "path": "research/original/n2/inference/generate.py",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n2/inference/generate.py",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "d600651d05ec9fceb6be6cf198fef1f885f24e3f",
+      "sha256": "b9568cbc24cf6ce0f1be69af1bf54c0106dd1ccb927a6a77aa9f64a13c7cbd92",
+      "bytes": 5960
+    },
+    {
+      "path": "evidence/train_freeze_v2.json",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n2/data/train1600/FREEZE_RECEIPT_v2.json",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "ba5dce31462f6c9762c459d81d2a0cc108c24959",
+      "sha256": "8a6b86bc13c773ca57ef030b27e1435f334a43eeafe725ca746260bbb51c7bc6",
+      "bytes": 5849
+    },
+    {
+      "path": "evidence/finalist_selection.json",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/source/n2/runs/finalist_C100_v2/FINALIST_SELECTION.json",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "b8b85de1e400c81d43b984067b74aac18828d56c",
+      "sha256": "f4149b51f62b0f066a3fbd72055f61b7518eb2d1d3f6e9e5314d9d34eafb11f9",
+      "bytes": 9908
+    },
+    {
+      "path": "evidence/final_receipt.json",
+      "source_path": "Recovery/N2/C100-20261025T173555Z/reports/FINAL_RECEIPT_SAFE.json",
+      "source_repository": "Hxtomi/nyqo-devs",
+      "source_commit": "9420ff6a88ae82e71c8938e672b893e19e4d7d9d",
+      "git_blob_sha": "d8fc97c30c3e14e1ca30100f1b93bf706cf033a6",
+      "sha256": "68bfcfef25a68d7adde325a62232dae89d82e25a24f6467901723132d895fb02",
+      "bytes": 6060
+    }
+  ],
+  "closeout": {
+    "path": "evidence/closeout.json",
+    "source_repository": "Hxtomi/nyqo-devs",
+    "source_path": "Project/audits/N2-20261025-C100-closeout.json",
+    "source_git_blob_sha": "57330806046010884accc20ca50600a8ea1750c2",
+    "modification": "Added preservation.private_GitHub_recovery_repository after the original research repository was renamed to nyqo-devs."
+  },
+  "checkpoint_manifest_source": {
+    "source_path": "Recovery/N2/C100-20261025T173555Z/RELEASE_MANIFEST.json",
+    "source_git_blob_sha": "d48173c7922f4fd977985ba0e1b95c40c51ae2a3",
+    "note": "Inference-only subset with archive revision fixed by the independent closeout audit."
+  }
+}

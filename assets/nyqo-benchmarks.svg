@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1368" height="438" viewBox="0 0 1368 438" role="img" aria-labelledby="title description">
+<title id="title">Nyqo n1 benchmark comparison</title>
+<desc id="description">Scores are percentages; higher is better. Nyqo n1 is shaded. Bold underlined scores mark the best result among five compact models. Qwen 4B is shown separately as a larger-model reference. FINAL is an internal 204-task evaluation; ARC-Easy, IFEval, and MBPP+ use subsets of 594, 210, and 100 tasks.</desc>
+<rect x="0" y="0" width="1368" height="438" rx="20" fill="#ffffff" />
+<g transform="translate(24 24)">
+<text x="16.00" y="17.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#737373">COMPACT MODELS</text>
+<text x="1212.00" y="17.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#737373">LARGER MODEL REFERENCE</text>
+<rect x="16" y="30" width="1072" height="64" rx="8" fill="#111111" />
+<rect x="1120" y="30" width="184" height="64" rx="8" fill="#252525" />
+<rect x="424" y="94" width="166" height="256" fill="#ececec" />
+<rect x="1120" y="94" width="184" height="256" fill="#f6f6f6" />
+<text x="28.00" y="70.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Evaluation</text>
+<text x="341.00" y="57.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">LFM2.5-350M</text>
+<text x="341.00" y="78.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#c4c4c4">Base model</text>
+<text x="507.00" y="57.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Nyqo n1</text>
+<text x="507.00" y="78.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#c4c4c4">Ours</text>
+<text x="673.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">SmolLM2</text>
+<text x="839.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Qwen2.5-0.5B</text>
+<text x="1005.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="700" fill="#ffffff">Granite-350M</text>
+<text x="1212.00" y="69.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#ffffff">Qwen 4B</text>
+<text x="28.00" y="121.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202020">FINAL (internal)</text>
+<text x="28.00" y="143.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="400" fill="#737373">204 tasks ↑</text>
+<text x="341.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="LFM2.5-350M (base)" data-metric="final">22.06</text>
+<text x="507.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#202020" data-model="Nyqo n1" data-metric="final" data-best="true">27.45</text>
+<line x1="474.47" y1="139.00" x2="539.53" y2="139.00" stroke="#202020" stroke-width="1.4" />
+<text x="673.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="SmolLM2" data-metric="final">21.08</text>
+<text x="839.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen2.5-0.5B" data-metric="final">22.55</text>
+<text x="1005.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Granite-350M" data-metric="final">22.06</text>
+<text x="1212.00" y="135.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen 4B (reference)" data-metric="final">67.65</text>
+<line x1="16.00" y1="158.00" x2="1088.00" y2="158.00" stroke="#d8d8d8" stroke-width="0.8" />
+<line x1="1120.00" y1="158.00" x2="1304.00" y2="158.00" stroke="#d8d8d8" stroke-width="0.8" />
+<text x="28.00" y="185.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202020">ARC-Easy</text>
+<text x="28.00" y="207.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="400" fill="#737373">594 tasks ↑</text>
+<text x="341.00" y="199.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="LFM2.5-350M (base)" data-metric="arc_easy">56.57</text>
+<text x="507.00" y="199.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#202020" data-model="Nyqo n1" data-metric="arc_easy" data-best="true">62.29</text>
+<line x1="474.47" y1="203.00" x2="539.53" y2="203.00" stroke="#202020" stroke-width="1.4" />
+<text x="673.00" y="199.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="SmolLM2" data-metric="arc_easy">48.82</text>
+<text x="839.00" y="199.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen2.5-0.5B" data-metric="arc_easy">57.07</text>
+<text x="1005.00" y="199.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Granite-350M" data-metric="arc_easy">59.43</text>
+<text x="1212.00" y="199.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen 4B (reference)" data-metric="arc_easy">75.76</text>
+<line x1="16.00" y1="222.00" x2="1088.00" y2="222.00" stroke="#d8d8d8" stroke-width="0.8" />
+<line x1="1120.00" y1="222.00" x2="1304.00" y2="222.00" stroke="#d8d8d8" stroke-width="0.8" />
+<text x="28.00" y="249.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202020">IFEval</text>
+<text x="28.00" y="271.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="400" fill="#737373">210 tasks ↑</text>
+<text x="341.00" y="263.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#202020" data-model="LFM2.5-350M (base)" data-metric="ifeval" data-best="true">75.71</text>
+<line x1="308.47" y1="267.00" x2="373.53" y2="267.00" stroke="#202020" stroke-width="1.4" />
+<text x="507.00" y="263.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Nyqo n1" data-metric="ifeval">72.86</text>
+<text x="673.00" y="263.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="SmolLM2" data-metric="ifeval">33.33</text>
+<text x="839.00" y="263.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen2.5-0.5B" data-metric="ifeval">24.76</text>
+<text x="1005.00" y="263.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Granite-350M" data-metric="ifeval">50.00</text>
+<text x="1212.00" y="263.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen 4B (reference)" data-metric="ifeval">86.19</text>
+<line x1="16.00" y1="286.00" x2="1088.00" y2="286.00" stroke="#d8d8d8" stroke-width="0.8" />
+<line x1="1120.00" y1="286.00" x2="1304.00" y2="286.00" stroke="#d8d8d8" stroke-width="0.8" />
+<text x="28.00" y="313.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202020">MBPP+</text>
+<text x="28.00" y="335.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="400" fill="#737373">100 tasks ↑</text>
+<text x="341.00" y="327.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="LFM2.5-350M (base)" data-metric="mbpp_plus">3.00</text>
+<text x="507.00" y="327.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Nyqo n1" data-metric="mbpp_plus">13.00</text>
+<text x="673.00" y="327.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="SmolLM2" data-metric="mbpp_plus">22.00</text>
+<text x="839.00" y="327.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#202020" data-model="Qwen2.5-0.5B" data-metric="mbpp_plus" data-best="true">37.00</text>
+<line x1="806.47" y1="331.00" x2="871.53" y2="331.00" stroke="#202020" stroke-width="1.4" />
+<text x="1005.00" y="327.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Granite-350M" data-metric="mbpp_plus">31.00</text>
+<text x="1212.00" y="327.00" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020" data-model="Qwen 4B (reference)" data-metric="mbpp_plus">63.00</text>
+<line x1="16.00" y1="350.00" x2="1088.00" y2="350.00" stroke="#d8d8d8" stroke-width="0.8" />
+<line x1="1120.00" y1="350.00" x2="1304.00" y2="350.00" stroke="#d8d8d8" stroke-width="0.8" />
+<text x="16.00" y="377.00" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#737373">Scores (%) · Best among compact models underlined</text>
+</g>
+</svg>

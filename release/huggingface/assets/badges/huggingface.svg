@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="28" viewBox="0 0 224 28" role="img" aria-labelledby="title">
+<title id="title">Hugging Face: Model card</title>
+<rect width="224" height="28" rx="4" fill="#303743"/>
+<path d="M118 0H220Q224 0 224 4V24Q224 28 220 28H118Z" fill="#655c78"/>
+<text x="59" y="18.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#edf1f6" font-weight="600">Hugging Face</text>
+<text x="171" y="18.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#edf1f6" font-weight="500">Model card</text>
+</svg>

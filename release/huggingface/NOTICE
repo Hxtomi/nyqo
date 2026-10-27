@@ -1,0 +1,24 @@
+Nyqo n1 — model modification and attribution notice
+
+Nyqo n1 was developed by Artur Markov-Tsoy from Liquid AI, Inc.'s
+LiquidAI/LFM2.5-350M instruction-tuned model, revision
+9e6c6ccf47cd318696e137d381a7ded8fe4df09f.
+
+Original model, tokenizer, and chat template: Liquid AI, Inc.
+Nyqo n1 modifications: Artur Markov-Tsoy, 2026.
+
+Modified model files:
+- config.json describes a 24-layer expanded LFM2 architecture, with eight
+  inserted layers and the corresponding expansion metadata.
+- model.safetensors includes the trained inserted layers. The original
+  model parameters were frozen during this post-training stage.
+- generation_config.json records generation defaults for this checkpoint.
+
+The model has 497,119,488 parameters, including 142,635,520 inserted
+parameters. The checkpoint is a full expanded model, not an adapter.
+
+The accompanying LICENSE is the upstream LFM Open License v1.0.
+This notice does not replace or modify its terms. Tokenizer and chat
+template files retain their upstream attribution and applicable terms.
+
+Source and methodology: https://github.com/Hxtomi/nyqo
