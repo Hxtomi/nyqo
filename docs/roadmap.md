@@ -18,13 +18,14 @@ Potential changes include broader training-data coverage, improved target qualit
 
 Publish Nyqo n1 as a Hugging Face model repository containing the weights, configuration, tokenizer, chat template, and model card. GitHub remains the source for code, training details, and evaluation documentation.
 
-The release target is [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo), which currently remains private. The model card is maintained in [release/huggingface/README.md](../release/huggingface/README.md), alongside the model license, modification notice, and file manifest. See the [release instructions](../release/README.md) for staging and verification.
+The checkpoint repository is [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo). The model card is maintained in [release/huggingface/README.md](../release/huggingface/README.md), alongside the model license, modification notice, and file manifest. See the [release instructions](../release/README.md) for staging and verification.
 
 ### Preparation
 
-- Upload the six verified checkpoint files to the private release repository, then validate the model-card example and CLI on a fresh GPU system. Record the tested Hub revision and observed output before opening access.
-- Switch the default downloader from the private recovery archive to the tested release revision and update the usage instructions.
-- Include the applicable model license and upstream attribution with the weights; keep source and data terms documented separately.
+- Completed: upload the six checkpoint files and release manifest, and verify their sizes and hashes.
+- Completed: switch the default downloader to the pinned Hxtomi/nyqo revision and update the usage instructions.
+- Completed: include the model license and upstream attribution. Local CPU loading and a short generation check also passed.
+- Pending: validate the model-card example and CLI on a fresh GPU system. Record the tested Hub revision and observed output before declaring the CUDA entry points verified.
 - Measure inference memory use and latency on specified hardware.
 - Document which training and evaluation artifacts can be obtained and reproduced.
 

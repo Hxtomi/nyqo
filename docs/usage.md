@@ -18,11 +18,11 @@ Use your platform's matching PyTorch CUDA wheel if needed. The requirements file
 
 ## Hugging Face checkpoint
 
-The six inference files are uploaded to [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo), which remains private during release preparation. Their byte lengths and hashes match the selected checkpoint. A Transformers loading example is in the [model card](../release/huggingface/README.md#quick-start); validation in a fresh GPU environment is still pending. The [release check record](../evidence/release_validation.json) describes the completed upload and local CPU check.
+The six inference files are uploaded to [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo). Their byte lengths and hashes match the selected checkpoint. A Transformers loading example is in the [model card](../release/huggingface/README.md#quick-start); validation in a fresh GPU environment is still pending. The [release check record](../evidence/release_validation.json) describes the completed upload and local CPU check.
 
 ## Download the checkpoint
 
-The download is pinned to commit `63af48f21c25223f4258d1bd4b99887769881497` of `Hxtomi/nyqo`, rather than its moving main branch. While the repository is private, use Hugging Face credentials with read access to it. Standard Hugging Face authentication, including `HF_TOKEN`, is supported by the download library.
+The download is pinned to commit `63af48f21c25223f4258d1bd4b99887769881497` of `Hxtomi/nyqo`, rather than its moving main branch. If repository access is restricted, use Hugging Face credentials with read access to it. Standard Hugging Face authentication, including `HF_TOKEN`, is supported by the download library.
 
 ~~~bash
 python -m nyqo.download --output models/nyqo-n1

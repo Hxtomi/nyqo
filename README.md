@@ -39,7 +39,7 @@ On the internal evaluation set, n1 scores **56/204**, versus **45/204** for the 
 
 ## Getting started
 
-The checkpoint files are available in the [Hugging Face repository](https://huggingface.co/Hxtomi/nyqo), which remains private during release preparation. File integrity and local CPU loading and generation have been checked; the CUDA example still awaits validation in a fresh GPU environment.
+The checkpoint files are hosted in the [Hugging Face repository](https://huggingface.co/Hxtomi/nyqo). File integrity and local CPU loading and generation have been checked; the CUDA example still awaits validation in a fresh GPU environment.
 
 The current CLI runs a local checkpoint and requires **Python 3.12** and a **CUDA GPU with BF16 support**:
 

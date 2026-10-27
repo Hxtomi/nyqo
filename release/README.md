@@ -1,6 +1,6 @@
 # Nyqo n1 Hugging Face release preparation
 
-Target: [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo). The repository currently remains private.
+Target: [Hxtomi/nyqo](https://huggingface.co/Hxtomi/nyqo). The staging helper below is intended for private preparation uploads.
 
 The prepared model page is [huggingface/README.md](huggingface/README.md). It accompanies the original [LICENSE](huggingface/LICENSE), a [modification notice](huggingface/NOTICE), the [comparison figure](huggingface/assets/nyqo-benchmarks.svg), [navigation badges](huggingface/assets/badges/), and a [file manifest](huggingface/manifest.json).
 
@@ -33,6 +33,6 @@ All six inference files have been uploaded and verified. A local Transformers ch
 
 The CUDA example in the model card still needs validation in a fresh GPU environment with BF16 support. Record the Hub revision and observed output when running that check; the card keeps this status explicit.
 
-The current model card is available in private Hugging Face commit `960012a31e6bb45f1f3303db60448234c7f4af3a` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. All six checkpoint files and the release manifest are uploaded. The card contents, file hashes, and Hub metadata have been verified.
+The current model card is recorded in Hugging Face commit `960012a31e6bb45f1f3303db60448234c7f4af3a` on 28 October 2026, alongside LICENSE, NOTICE, the embedded comparison figure, and navigation badges. All six checkpoint files and the release manifest are uploaded. The card contents, file hashes, and Hub metadata have been verified.
 
-The repository remains private during release preparation. Training data, optimizer states, and closed evaluation items remain outside the model release.
+Training data, optimizer states, and closed evaluation items remain outside the model release.
