@@ -110,4 +110,6 @@ For file verification, multi-turn JSON input, and extraction of the final answer
 
 Model files are distributed under the [LFM 1.0 License](LICENSE), inherited from LiquidAI/LFM2.5-350M. See [NOTICE](NOTICE) for modifications and attribution. Nyqo-authored source code and documentation are under [Apache 2.0](https://github.com/Hxtomi/nyqo/blob/main/LICENSE). The training corpus and closed evaluation bank are not released.
 
-Developed by **Artur Markov-Tsoy**, building on Liquid AI's LFM2.5-350M. Evaluation uses ARC, IFEval, and EvalPlus (MBPP+); their materials retain their own licenses. [Citation metadata](https://github.com/Hxtomi/nyqo/blob/main/CITATION.cff).
+**Nyqo team:** Artur Markov-Tsoy · Daniel Ayupov.
+
+Built on Liquid AI's LFM2.5-350M. Evaluation uses ARC, IFEval, and EvalPlus (MBPP+); their materials retain their own licenses. [Citation metadata](https://github.com/Hxtomi/nyqo/blob/main/CITATION.cff).

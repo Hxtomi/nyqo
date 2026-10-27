@@ -83,4 +83,6 @@ The selected checkpoint saw 800 training examples. The recorded n1 post-training
 - [Development priorities](docs/roadmap.md): evaluation and training work, plus preparation of the Hugging Face release.
 - [License and attribution](docs/licensing.md): terms for the base model, project source, and data.
 
-Developed by **Artur Markov-Tsoy**, building on Liquid AI's LFM2.5-350M. Evaluation relies on ARC, IFEval, and EvalPlus (MBPP+). Citation metadata is in [CITATION.cff](CITATION.cff).
+**Nyqo team:** Artur Markov-Tsoy · Daniel Ayupov.
+
+Built on Liquid AI's LFM2.5-350M. Evaluation relies on ARC, IFEval, and EvalPlus (MBPP+). Citation metadata is in [CITATION.cff](CITATION.cff).
