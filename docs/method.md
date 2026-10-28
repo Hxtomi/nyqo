@@ -18,6 +18,10 @@ After original layers 3, 7, 11, and 15, the implementation inserts independent c
 
 The [original expansion implementation](../research/original/n1/expanded_runtime.py) is preserved with source hashes in [provenance](../evidence/provenance.json). This uses established identity expansion; the project does not propose a new expansion algorithm.
 
+## Why use an expanded backbone?
+
+Earlier unchanged-size variants increased the aggregate score but failed the required balance across mathematics and code. Related expanded variants had higher aggregate and baseline-retention counts, although they still failed the earlier code limit. These observations motivated retaining expansion for the next corrected-data experiment. The [earlier architecture exploration](architecture-history.md) used a different corpus and evaluation bank; it is not a matched ablation of the final training stage.
+
 ## Data and targets
 
 The corrected frozen stage contains 1,600 English examples: 800 code tasks and 160 tasks in each of source use, instructions, reasoning/math, knowledge/uncertainty, and dialogue context.
@@ -76,6 +80,6 @@ The author reports US$19.23 in cloud instance rental. This is not the cost of pr
 
 ## What this experiment can establish
 
-The fixed checkpoint meets the project's internal acceptance rule and improves two specific public diagnostics. The available controls do not isolate the contributions of expansion, target selection, or KL. An unchanged-size SFT/LoRA control, a no-KL ablation, additional seeds, and measured inference efficiency are absent.
+The fixed checkpoint meets the project's internal acceptance rule and improves two specific public diagnostics. The available controls do not isolate the contributions of expansion, target selection, or KL. An unchanged-size SFT/LoRA control matched to the final 1,600-example stage, a no-KL ablation, additional seeds, and measured inference efficiency are absent.
 
 [Results](results.md) describes the evidence and its limits. [Artifact availability](../artifacts/README.md) distinguishes preserved files from publicly downloadable ones.

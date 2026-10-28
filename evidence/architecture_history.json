@@ -1,0 +1,90 @@
+{
+  "schema": "nyqo-earlier-architecture-exploration-v1",
+  "scope": "Earlier exploratory cycle; not a matched ablation of the released checkpoint on its corrected 1600-example stage.",
+  "training_corpus_rows": 4000,
+  "evaluation": {
+    "name": "Earlier repeatedly used internal bank",
+    "tasks": 204,
+    "tasks_per_domain": 34,
+    "bank_sha256": "91cf3c1d97a29d83d58e3fb60887a22c9dd4c103b94bc6adf1d9ff577e1c4031",
+    "distinct_from_current_internal_eval": true,
+    "scoring_snapshot": "2026-10-23 reviewed totals"
+  },
+  "models": [
+    {
+      "label": "LFM2.5-350M (base)",
+      "parameters": 354483968,
+      "trainable_parameters": 0,
+      "passed": 55,
+      "code_passed": 9,
+      "base_successes_retained": 55
+    },
+    {
+      "label": "Unchanged-size A",
+      "parameters": 354483968,
+      "trainable_parameters": 287375104,
+      "passed": 64,
+      "code_passed": 0,
+      "base_successes_retained": 26,
+      "acceptance": "FAIL: mathematics and code"
+    },
+    {
+      "label": "Unchanged-size B",
+      "parameters": 354483968,
+      "trainable_parameters": 287375104,
+      "passed": 56,
+      "code_passed": 1,
+      "base_successes_retained": 24,
+      "acceptance": "FAIL: aggregate gain, mathematics and code"
+    },
+    {
+      "label": "Expanded E497",
+      "parameters": 497119488,
+      "trainable_parameters": 142635520,
+      "passed": 69,
+      "code_passed": 3,
+      "base_successes_retained": 34,
+      "acceptance": "FAIL: code"
+    },
+    {
+      "label": "Expanded E497K",
+      "parameters": 497119488,
+      "trainable_parameters": 142635520,
+      "passed": 72,
+      "code_passed": 4,
+      "base_successes_retained": 39,
+      "acceptance": "FAIL: code"
+    }
+  ],
+  "shared_recorded_settings": {
+    "updates_per_trained_variant": 500,
+    "learning_rate": 1e-05,
+    "base_revision": "9e6c6ccf47cd318696e137d381a7ded8fe4df09f",
+    "batch_order_sha256": "85630c2147ac4a566e55b037830827f4a5e9d9f5bc963628b06ca98d5755843d"
+  },
+  "interpretation": "Unchanged-size recipes increased the earlier aggregate but failed the required domain balance. Expanded recipes had higher aggregate and item-retention counts but also failed the earlier code limit. This motivated retaining expansion; it does not establish that extra parameters alone caused the released checkpoint improvement.",
+  "limits": [
+    "Parameter masks, reference targets and objectives varied across recipes.",
+    "The final checkpoint uses a different corrected 1600-example training stage and a different held-out internal bank.",
+    "Historical bank reuse limits independent validation.",
+    "No unchanged-size control matched to the final stage was run."
+  ],
+  "sources": [
+    {
+      "repository": "Hxtomi/nyqo-devs",
+      "commit": "24ba9db2fa98d6e7aef92b445d08f6a723540eec",
+      "path": "Project/HISTORY.md",
+      "git_blob_sha": "f1c01f89af827fe47de6d5f10ee30501742b9717",
+      "scope": "Archived execution/parameter audit and item-retention summary"
+    },
+    {
+      "repository": "Hxtomi/nyqo-devs",
+      "commit": "24ba9db2fa98d6e7aef92b445d08f6a723540eec",
+      "path": "Project/audits/N1-20261023-knowledge008-review.json",
+      "git_blob_sha": "04b6ebbd66a053ad94683a73d808a9df2ff55871",
+      "scope": "Reviewed aggregate totals only; no closed prompts, responses or individual grades copied into this summary"
+    }
+  ],
+  "new_training_or_inference": false,
+  "closed_item_content_included": false
+}

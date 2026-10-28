@@ -104,7 +104,7 @@ For file verification, multi-turn JSON input, and extraction of the final answer
 
 - Results cover one post-training seed and one selected checkpoint. They do not establish robustness across training runs or performance on the full public benchmarks.
 - Retention is incomplete: the earlier item-level analysis found 19 lost base-model successes. An aggregate gain does not imply improvement on every task or domain.
-- The experiments do not isolate the effects of expansion, answer selection, and distillation. There is no same-size fine-tuning control, no ablation without distillation, and no measured inference speed.
+- The experiments do not isolate the effects of expansion, answer selection, and distillation. There is no same-size fine-tuning control matched to the final 1,600-example stage, no ablation without distillation, and no measured inference speed. Earlier exploratory runs are described in the [architecture history](https://github.com/Hxtomi/nyqo/blob/main/docs/architecture-history.md).
 - Overlap checks covered training inputs using exact matching and bounded semantic retrieval. They were not exhaustive; training targets were not compared, and overlap with upstream pretraining is unknown.
 - Other languages, longer contexts, tool use, long-horizon agent behavior, production reliability, and safety have not been evaluated.
 

@@ -5,6 +5,8 @@ title: "Nyqo n1"
 authors:
   - family-names: "Markov-Tsoy"
     given-names: "Artur"
+  - family-names: "Ayupov"
+    given-names: "Daniel"
 version: "n1"
 date-released: "2026-10-26"
 url: "https://github.com/Hxtomi/nyqo"
